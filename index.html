@@ -1,14 +1,293 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-<title>Page Title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PT. Mardian Core Digital - Company Profile</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom colors for theme */
+    :root {
+      --color-primary: #092f60;
+      --color-secondary: #d69641;
+      --color-bg: #ffffff;
+      --color-text-primary: #092f60;
+      --color-text-secondary: #d69641;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-text-primary);
+    }
+    a:hover {
+      color: #fff;
+    }
+    /* Custom section styles */
+    .btn-primary {
+      background-color: var(--color-primary);
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: var(--color-secondary);
+    }
+    .section-header {
+      color: var(--color-primary);
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+    .divider {
+      width: 4rem;
+      height: 4px;
+      background: var(--color-secondary);
+      margin: 0.5rem 0 2rem;
+      border-radius: 2px;
+    }
+    /* Header logo styling */
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 1.25px;
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .logo-icon {
+      font-weight: 900;
+      font-size: 2.25rem;
+      color: var(--color-secondary);
+      position: relative;
+    }
+    /* Footer styling */
+    footer {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 1.5rem 0;
+      font-size: 0.875rem;
+    }
+    /* Responsive hero bg with geometric shapes similar to image */
+    .hero-bg {
+      position: relative;
+      overflow: hidden;
+      background-color: var(--color-bg);
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem 1rem;
+    }
+    .hero-bg::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: -120px;
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(135deg, var(--color-secondary) 0%, transparent 70%);
+      border-radius: 50% 50% 0 50%;
+      opacity: 0.12;
+      z-index: 0;
+    }
+    .hero-bg::after {
+      content: "";
+      position: absolute;
+      bottom: -60px;
+      right: -140px;
+      width: 350px;
+      height: 350px;
+      background: linear-gradient(45deg, var(--color-primary) 0%, transparent 80%);
+      border-radius: 50% 50% 50% 0;
+      opacity: 0.14;
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 960px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    /* Cards for services */
+    .service-card {
+      border: 1px solid var(--color-primary);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: box-shadow 0.3s ease;
+      background: #fff;
+    }
+    .service-card:hover {
+      box-shadow: 0 8px 20px rgb(13 57 110 / 0.25);
+      border-color: var(--color-secondary);
+    }
+    .service-icon {
+      font-size: 3rem;
+      color: var(--color-secondary);
+      margin-bottom: 1rem;
+    }
+    /* Team photo placeholders */
+    .team-photo {
+      border-radius: 9999px;
+      border: 3px solid var(--color-secondary);
+      overflow: hidden;
+      max-width: 150px;
+      max-height: 150px;
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
 </head>
-<body>
+<body class="antialiased">
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="logo">
+        <img src="logo.png" style="width:160px;" alt="" srcset="">
+      </div>
+      <ul class="hidden md:flex space-x-8 text-sm font-semibold">
+        <li><a href="#home" class="hover:text-secondary transition-colors">Home</a></li>
+        <li><a href="#about" class="hover:text-secondary transition-colors">About</a></li>
+        <li><a href="#services" class="hover:text-secondary transition-colors">Services</a></li>
+        <li hidden><a href="#team" class="hover:text-secondary transition-colors">Team</a></li>
+        <li><a href="#contact" class="hover:text-secondary transition-colors">Contact</a></li>
+      </ul>
+      <!-- Mobile menu button will be added if required -->
+    </nav>
+  </header>
+
+  <section id="home" class="hero-bg" role="banner" aria-label="Company introduction banner section">
+    <div class="hero-content">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4" style="color: var(--color-primary);">
+        Solusi Digital Inovatif untuk Bisnis Anda
+      </h1>
+      <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8" style="color: #3a3a3a;">
+        PT Mardian Core Digital adalah mitra terpercaya dalam pembuatan aplikasi, pengembangan website, dan keamanan digital yang dirancang khusus untuk mengakselerasi pertumbuhan bisnis Anda di era digital.
+      </p>
+      <a href="#services" class="btn-primary px-8 py-3 rounded-lg text-lg font-semibold inline-block">
+        Jelajahi Layanan Kami
+      </a>
+    </div>
+  </section>
+
+  <main class="max-w-7xl mx-auto px-6 py-16" role="main">
+
+    <section id="about" class="mb-20" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-header text-3xl md:text-4xl mb-2 text-center">Tentang Kami</h2>
+      <div class="divider mx-auto"></div>
+      <p class="max-w-4xl mx-auto text-center text-gray-800 text-lg leading-relaxed">
+        Berdiri di Surabaya, PT Mardian Core Digital telah menjadi pelopor solusi digital yang menggabungkan teknologi mutakhir dan kreativitas. Kami berdedikasi membantu usaha dari berbagai skala meningkatkan efisiensi, keamanan, dan pengalaman pelanggan melalui produk digital kami yang responsif, aman, dan mudah digunakan.
+      </p>
+    </section>
+
+    <section id="services" class="mb-24" aria-labelledby="services-title">
+      <h2 id="services-title" class="section-header text-3xl md:text-4xl mb-2 text-center">Layanan Kami</h2>
+      <div class="divider mx-auto"></div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+
+        <article class="service-card" aria-labelledby="app-dev-title">
+          <div class="service-icon" aria-hidden="true">📱</div>
+          <h3 id="app-dev-title" class="text-xl font-semibold mb-2 text-primary">Pengembangan Aplikasi</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Kami menciptakan aplikasi mobile dan desktop yang inovatif dan intuitif, didukung teknologi terkini untuk membantu bisnis Anda menjangkau lebih banyak pelanggan dengan pengalaman yang mulus dan modern.
+          </p>
+        </article>
+
+        <article class="service-card" aria-labelledby="web-dev-title">
+          <div class="service-icon" aria-hidden="true">🌐</div>
+          <h3 id="web-dev-title" class="text-xl font-semibold mb-2 text-primary">Pengembangan Website</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Dari website profil perusahaan hingga e-commerce dan portal interaktif, kami merancang dan membangun website profesional yang responsive, cepat, dan ramah SEO untuk meningkatkan visibilitas bisnis Anda.
+          </p>
+        </article>
+
+        <article class="service-card" aria-labelledby="security-title">
+          <div class="service-icon" aria-hidden="true">🔒</div>
+          <h3 id="security-title" class="text-xl font-semibold mb-2 text-primary">Solusi Keamanan Digital</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Kami melindungi aset digital Anda dengan layanan keamanan tingkat lanjut mulai dari audit keamanan, pengembangan sistem keamanan internal, hingga perlindungan data dan mitigasi ancaman siber.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section hidden id="team" class="mb-24 max-w-6xl mx-auto" aria-labelledby="team-title">
+      <h2 id="team-title" class="section-header text-3xl md:text-4xl mb-2 text-center">Tim Profesional Kami</h2>
+      <div class="divider mx-auto"></div>
+      <p class="text-center max-w-3xl mx-auto mb-12 text-gray-800">
+        Tim kami terdiri dari para ahli di bidang teknologi, desain, dan keamanan digital yang siap memberikan solusi tepat sesuai kebutuhan unik bisnis Anda.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-12">
+        <div class="text-center">
+          <img 
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/695c29d7-fbfc-4e55-979a-78c8926d5827.png" 
+            alt="Potret seorang CEO pria profesional dengan latar belakang kantor modern" 
+            class="team-photo mb-4" 
+            onerror="this.onerror=null; this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d07f17d7-139a-4d07-9c52-a449aed9c8c0.png';" />
+          <h4 class="text-lg font-semibold text-primary">Mardianta Putra</h4>
+          <p class="text-gray-700 italic">Chief Executive Officer</p>
+        </div>
+        <div class="text-center">
+          <img 
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cd6eba1f-184e-4d37-a4b2-304cefda72fd.png" 
+            alt="Potret seorang CTO wanita ahli teknologi dengan senyuman ramah, latar belakang sederhana" 
+            class="team-photo mb-4" 
+            onerror="this.onerror=null; this.src='https://placehold.co/150x150?text=No+Image';" />
+          <h4 class="text-lg font-semibold text-primary">Sari Dewi</h4>
+          <p class="text-gray-700 italic">Chief Technology Officer</p>
+        </div>
+        <div class="text-center">
+          <img 
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/59cd3e10-8d9e-44bb-92ec-a4443a7326d7.png" 
+            alt="Potret seorang Chief Security Officer pria mengenakan jas formal, dengan ekspresi percaya diri" 
+            class="team-photo mb-4" 
+            onerror="this.onerror=null; this.src='https://placehold.co/150x150?text=No+Image';" />
+          <h4 class="text-lg font-semibold text-primary">Agus Wibowo</h4>
+          <p class="text-gray-700 italic">Chief Security Officer</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mb-20 max-w-3xl mx-auto" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-header text-3xl md:text-4xl mb-6 text-center">Hubungi Kami</h2>
+      <div class="divider mx-auto"></div>
+      <form action="#" method="POST" class="space-y-6" aria-label="Formulir kontak perusahaan">
+        <div>
+          <label for="name" class="block text-sm font-semibold mb-1">Nama Lengkap</label>
+          <input type="text" name="name" id="name" required
+            class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary" />
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-semibold mb-1">Email</label>
+          <input type="email" name="email" id="email" required
+            class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary" />
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-semibold mb-1">Pesan</label>
+          <textarea name="message" id="message" required rows="5"
+            class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary resize-y"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn-primary px-6 py-3 rounded-md font-semibold text-lg hover:bg-secondary transition-colors">
+            Kirim Pesan
+          </button>
+        </div>
+      </form>
+      <div class="mt-12 text-center text-gray-700">
+        <p><strong>Nomor AHU:</strong> AHU-034361.AH.01.30.Tahun 2025</p>
+        <p><strong>Alamat:</strong> Jl. Dharmahusada Permai, Mulyorejo, Kota Surabaya, Jawa Timur 60115</p>
+        <p><strong>Telepon:</strong> +62 838 5216 6740</p>
+        <p><strong>Email:</strong> info[at]mardiancore.digital</p>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" aria-label="Footer copyright and social info">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p>© 2025 PT. Mardian Core Digital. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
-
 
