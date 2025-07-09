@@ -171,8 +171,30 @@
         <li hidden><a href="#team" class="hover:text-secondary transition-colors">Team</a></li>
         <li><a href="#contact" class="hover:text-secondary transition-colors">Contact</a></li>
       </ul>
-      <!-- Mobile menu button will be added if required -->
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Buka menu utama</span>
+          <!-- Icon saat menu tertutup (hamburger) -->
+          <svg id="icon-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!-- Icon saat menu terbuka (close) -->
+          <svg id="icon-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
     </nav>
+    <!-- Menu Mobile, tampil/sembunyi berdasarkan state menu. -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <li><a href="#home" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Home</a></li>
+        <li><a href="#about" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">About</a></li>
+        <li><a href="#services" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Services</a></li>
+        <li><a href="#contact" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Contact</a></li>
+      </ul>
+    </div>
   </header>
 
   <section id="home" class="hero-bg" role="banner" aria-label="Company introduction banner section">
@@ -292,7 +314,7 @@
           </button>
         </div>
       </form>
-      <div hidden class="mt-12 text-center text-gray-700">
+      <div class="mt-12 text-center text-gray-700">
         <p><strong>Nomor AHU:</strong> AHU-034361.AH.01.30.Tahun 2025</p>
         <p><strong>Alamat:</strong> Jl. Dharmahusada Permai, Mulyorejo, Kota Surabaya, Jawa Timur 60115</p>
         <p><strong>Telepon:</strong> +62 838 5216 6740</p>
@@ -312,5 +334,31 @@
     </div>
   </footer>
 
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+    const toggleMenu = () => {
+      const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+      mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    };
+
+    mobileMenuButton.addEventListener('click', toggleMenu);
+
+    // Tutup menu saat link di dalam menu diklik
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (mobileMenuButton.getAttribute('aria-expanded') === 'true') {
+          toggleMenu();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
