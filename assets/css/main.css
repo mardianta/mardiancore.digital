@@ -19,7 +19,16 @@ body {
   transition: background-color 0.3s ease;
 }
 .btn-primary:hover {
+  background-color: var(--color-secondary);
+}
+.btn-whatsapp {
   background-color: var(--color-whatsapp);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.btn-whatsapp:hover {
+  /* A slightly darker green for hover effect */
+  background-color: #0d6a2f; 
 }
 .section-header {
   color: var(--color-primary);
@@ -151,7 +160,8 @@ footer {
   text-decoration: none;
 }
 .prose a:hover {
-  color: var(--color-whatsapp);
+  /* Underline on hover for links within blog articles */
+  text-decoration: underline;
 }
 .prose code {
     background-color: #f3f4f6;
