@@ -6,23 +6,23 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://mardiancore.digital/index.html</loc>
+  <loc>https://mardiancore.digital/</loc>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://mardiancore.digital/blog/index.html</loc>
+  <loc>https://mardiancore.digital/blog/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mardiancore.digital/blog/cara-agar-website-cepat-terindeks-google.html</loc>
+  <loc>https://mardiancore.digital/blog/cara-agar-website-cepat-terindeks-google</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://mardiancore.digital/blog/website-terindeks-cepat.html</loc>
+  <loc>https://mardiancore.digital/blog/website-terindeks-cepat</loc>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://mardiancore.digital/blog/5-tanda-bisnis-butuh-website.html</loc>
+  <loc>https://mardiancore.digital/blog/5-tanda-bisnis-butuh-website</loc>
   <priority>0.64</priority>
 </url>
 
