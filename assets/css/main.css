@@ -52,6 +52,29 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+
+/* Header navigation link hover effect */
+header nav ul li a:not(.btn-primary) {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 5px; /* Space for the underline */
+}
+header nav ul li a:not(.btn-primary)::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-secondary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+header nav ul li a:not(.btn-primary):hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 .logo-icon {
   font-weight: 900;
   font-size: 2.25rem;
