@@ -1,0 +1,83 @@
+SIMULASI PENJANGKAUAN KLIEN PERTAMA (EMAIL & WHATSAPP)
+
+**Skenario:**
+- **Pengirim:** Mardianta Putra (PT. Mardian Core Digital)
+- **Prospek:** Kopi Senja Surabaya (dari `prospect_list_template.txt`)
+- **Observasi:** Website lama tidak mobile-friendly, tidak ada sistem menu online.
+
+---
+**SIMULASI 1: PENJANGKAUAN VIA EMAIL**
+---
+
+**LANGKAH 1: EMAIL PERTAMA (DARI ANDA)**
+
+**Subjek Email:** Peluang Digital untuk Kopi Senja Surabaya
+
+**Isi Email:**
+
+Yth. Pemilik/Manajer Kopi Senja Surabaya,
+
+Perkenalkan, saya Mardianta Putra dari PT. Mardian Core Digital, sebuah perusahaan pengembangan software di Surabaya yang berfokus membantu bisnis seperti Anda untuk tumbuh di era digital.
+
+Saat mencari kafe dengan ulasan bagus di Surabaya, saya menemukan Kopi Senja Surabaya. Saya melihat saat ini website Anda tampaknya belum optimal saat dibuka melalui perangkat mobile, yang mungkin menyulitkan pelanggan untuk melihat menu atau informasi kontak.
+
+Kami dapat membantu Anda dengan membuatkan website modern yang tidak hanya menarik, tetapi juga responsif (tampil baik di HP) dan bisa dilengkapi sistem menu online. Hal ini berpotensi meningkatkan jangkauan pelanggan dan mempermudah mereka untuk memesan.
+
+Apakah Anda bersedia untuk berdiskusi singkat selama 15 menit minggu depan untuk membahas bagaimana kami bisa membantu Kopi Senja Surabaya?
+
+Terima kasih atas waktu dan perhatian Anda.
+
+Hormat saya,
+
+Mardianta Putra
+PT. Mardian Core Digital
+mardiancore.digital
+0838 5216 6740
+
+---
+
+**LANGKAH 2: KEMUNGKINAN JAWABAN (DARI PROSPEK)**
+
+**Subjek Email:** Re: Peluang Digital untuk Kopi Senja Surabaya
+
+**Isi Email:**
+
+Selamat siang Pak Mardianta,
+
+Terima kasih atas emailnya. Betul sekali, website kami sudah cukup lama tidak di-update.
+
+Boleh, saya tertarik untuk mendengar lebih lanjut. Saya ada waktu luang minggu depan.
+
+Terima kasih,
+Sarah
+Owner, Kopi Senja Surabaya
+
+---
+
+**LANGKAH 3: EMAIL BALASAN (DARI ANDA UNTUK MENJADWALKAN)**
+
+**Subjek Email:** Re: Peluang Digital untuk Kopi Senja Surabaya
+
+**Isi Email:**
+
+Baik Ibu Sarah, terima kasih kembali atas respons cepatnya.
+
+Bagaimana jika kita jadwalkan diskusi singkat via telepon pada hari Selasa jam 10.00 pagi atau Rabu jam 14.00 siang? Jika waktu tersebut kurang cocok, mohon infokan waktu yang sesuai untuk Ibu.
+
+Dalam diskusi nanti, saya ingin mendengar lebih banyak tentang kebutuhan Kopi Senja dan menunjukkan beberapa contoh bagaimana website baru dapat membantu bisnis Ibu.
+
+Terima kasih,
+Mardianta Putra
+
+---
+**SIMULASI 2: PENJANGKAUAN VIA WHATSAPP (ALTERNATIF)**
+---
+
+**Pesan Pertama (Dari Anda):**
+Selamat pagi, perkenalkan saya Mardianta dari PT. Mardian Core Digital di Surabaya. Saya menemukan bisnis Anda, Kopi Senja Surabaya, dan melihat ada peluang untuk meningkatkan kehadiran digitalnya melalui sebuah website yang lebih modern dan mudah diakses pelanggan dari HP. Apakah Bapak/Ibu berkenan jika saya kirimkan informasi lebih detail, atau mungkin kita bisa berdiskusi singkat via telepon? Terima kasih.
+
+**Kemungkinan Jawaban (Dari Prospek):**
+Pagi. Boleh, info tentang apa ya?
+
+**Pesan Balasan (Dari Anda):**
+Kami bisa bantu buatkan website yang mobile-friendly dengan menu online, jadi pelanggan bisa lihat-lihat dan pesan lebih mudah. Ini bisa meningkatkan pesanan dan mengurangi antrean. Apakah ada waktu 10-15 menit untuk telepon besok agar saya bisa jelaskan lebih detail?
