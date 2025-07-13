@@ -1,0 +1,63 @@
+TARGET CAPAIAN MINGGUAN - KUARTAL 1 (BULAN 1-3)
+Fokus: Peluncuran, Akuisisi Klien Pertama, dan Pembuktian Konsep
+
+---
+**BULAN 1: FONDASI & JANGKAUAN AWAL**
+---
+
+*   **Minggu 1 (Sudah Lewat):**
+    *   Capaian: Pendirian legalitas perusahaan, pembuatan aset brand awal (logo), dan setup dasar website.
+
+*   **Minggu 2: Finalisasi Platform & Identifikasi Prospek**
+    *   [✅] Selesaikan konten utama website (`index.html`): Tambahkan bagian "Proses Kerja Kami".
+    *   [ ] Buat daftar berisi minimal 30 prospek potensial (UKM, kenalan, bisnis lokal di Surabaya).
+    *   [ ] Siapkan draf template email/pesan WhatsApp untuk perkenalan awal.
+
+*   **Minggu 3: Aksi Penjangkauan & Pembuatan Portofolio Awal**
+    *   [ ] Mulai hubungi 10 prospek pertama dari daftar. Lacak semua interaksi.
+    *   [ ] Mulai kerjakan 1 proyek internal (non-klien) untuk dijadikan portofolio. Contoh: aplikasi web sederhana, desain ulang website fiktif.
+    *   [ ] Dokumentasikan proses pengerjaan proyek internal sebagai bahan studi kasus.
+
+*   **Minggu 4: Follow-up & Publikasi Aset**
+    *   [ ] Lakukan follow-up kepada 10 prospek yang sudah dihubungi minggu lalu.
+    *   [ ] Hubungi 10 prospek baru.
+    *   [ ] Selesaikan proyek internal dan siapkan materi untuk ditampilkan di website (screenshot, deskripsi singkat).
+
+---
+**BULAN 2: AKUISISI KLIEN & EKSEKUSI AWAL**
+---
+
+*   **Minggu 5: Menjadwalkan Pertemuan & Menambah Kepercayaan**
+    *   [ ] Targetkan untuk menjadwalkan minimal 1-2 sesi konsultasi/pertemuan dengan prospek.
+    *   [ ] Tambahkan bagian "Portofolio" di website dan tampilkan proyek internal yang sudah selesai.
+    *   [ ] Hubungi 10 prospek baru.
+
+*   **Minggu 6: Negosiasi & Penutupan Kesepakatan**
+    *   [ ] Fokus pada negosiasi dengan prospek yang paling menjanjikan.
+    *   [ ] Siapkan template proposal penawaran dan kontrak layanan yang sederhana dan jelas.
+    *   [ ] **Target Utama:** Mengamankan (closing) klien pertama.
+
+*   **Minggu 7: Kick-off Proyek & Dokumentasi Proses**
+    *   [ ] Mulai pengerjaan proyek untuk klien pertama.
+    *   [ ] Terapkan "Proses Kerja Kami" secara nyata dan dokumentasikan setiap tahapannya.
+
+*   **Minggu 8: Menjaga Momentum**
+    *   [ ] Berikan update progres mingguan kepada klien pertama untuk membangun hubungan baik.
+    *   [ ] Lanjutkan penjangkauan ke 5 prospek baru (intensitas lebih rendah untuk fokus pada proyek).
+
+---
+**BULAN 3: PENYELESAIAN & PERSIAPAN PENINGKATAN**
+---
+
+*   **Minggu 9 & 10: Eksekusi & Pencarian Klien Kedua**
+    *   [ ] Lanjutkan pengerjaan proyek pertama hingga masuk tahap pengujian (QA).
+    *   [ ] Tingkatkan kembali intensitas penjangkauan ke prospek baru. Targetkan mendapatkan klien kedua.
+
+*   **Minggu 11: Peluncuran & Pengumpulan Bukti Sosial**
+    *   [ ] **Target Utama:** Serah terima/peluncuran proyek klien pertama.
+    *   [ ] Setelah klien puas, minta testimoni secara formal.
+
+*   **Minggu 12: Evaluasi Kuartal & Perencanaan**
+    *   [ ] Tambahkan testimoni dan portofolio klien pertama ke website.
+    *   [ ] Evaluasi pencapaian Q1: Apa yang berhasil? Apa yang perlu diperbaiki?
+    *   [ ] Buat target mingguan untuk Kuartal 2 berdasarkan hasil evaluasi.
