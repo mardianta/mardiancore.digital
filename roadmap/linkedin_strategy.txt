@@ -1,0 +1,47 @@
+Roadmap Strategi LinkedIn untuk PT. Mardian Core Digital
+
+Tujuan Utama: Membangun citra merek (brand awareness), menunjukkan keahlian (thought leadership), dan menghasilkan prospek klien (lead generation) melalui platform LinkedIn.
+
+---
+
+### Fase 1: Optimasi Profil & Fondasi Konten (Minggu 1 - 2)
+
+1.  **[ ] Optimasi Profil Perusahaan:**
+    *   **Banner:** Desain banner LinkedIn yang profesional, menampilkan logo, tagline, dan layanan utama (Pengembangan Aplikasi, Website, Keamanan Digital).
+    *   **Tagline:** Buat tagline yang jelas dan menarik dalam dua bahasa. Contoh: "Your Partner in Digital Transformation | Solusi Aplikasi, Website, & Keamanan Digital".
+    *   **Deskripsi (About Us):** Tulis deskripsi perusahaan yang komprehensif, menjelaskan visi, misi, dan layanan secara detail. Sediakan versi Bahasa Indonesia dan Bahasa Inggris.
+    *   **Tombol CTA:** Pastikan tombol Call-to-Action mengarah ke halaman "Kontak" atau "Layanan" di website.
+
+2.  **[ ] Strategi Konten Awal:**
+    *   **Riset Hashtag:** Tentukan 5-10 hashtag utama yang relevan dengan industri dan layanan. Contoh: `#TransformasiDigital`, `#PengembanganAplikasi`, `#KeamananSiber`, `#WebDevelopment`, `#DigitalSolution`, `#StartupIndonesia`.
+    *   **Konten Perkenalan:** Buat 3-5 postingan awal untuk memperkenalkan perusahaan, tim, dan nilai yang ditawarkan.
+    *   **Hubungkan Blog:** Buat postingan yang mempromosikan artikel blog yang sudah ada (misal: "5 Tanda Bisnis Butuh Website" dan "Studi Kasus: Website Terindeks Cepat").
+
+---
+
+### Fase 2: Eksekusi Konten & Peningkatan Engagement (Minggu 3 - 8)
+
+1.  **[ ] Jadwal Konten Rutin:**
+    *   Tetapkan jadwal posting yang konsisten, minimal 3 kali seminggu.
+    *   **Pilar Konten:**
+        *   **Edukasi (Tips):** Bagikan tips praktis seputar teknologi, keamanan, dan pengembangan web.
+        *   **Studi Kasus:** Tampilkan keberhasilan proyek (tanpa menyebut nama klien jika rahasia) untuk membangun kepercayaan.
+        *   **Berita Perusahaan:** Informasikan tentang pembaruan layanan, pencapaian, atau artikel baru di blog.
+        *   **Interaksi:** Ajukan pertanyaan kepada audiens untuk memancing diskusi.
+
+2.  **[ ] Interaksi Aktif:**
+    *   Balas setiap komentar dan pesan yang masuk.
+    *   Ikuti (follow) akun perusahaan potensial dan para pengambil keputusan di industri target.
+    *   Berikan komentar yang relevan dan berbobot pada postingan orang lain untuk meningkatkan visibilitas.
+
+---
+
+### Fase 3: Pemanfaatan untuk Prospek & Analisis (Minggu 9 dan seterusnya)
+
+1.  **[ ] Lead Generation:**
+    *   Buat postingan khusus yang menyoroti setiap layanan dengan *call-to-action* yang jelas (misalnya, "Hubungi kami untuk konsultasi gratis").
+    *   Manfaatkan LinkedIn Search untuk menemukan calon klien berdasarkan industri, ukuran perusahaan, atau jabatan.
+
+2.  **[ ] Analisis & Iterasi:**
+    *   Setiap akhir bulan, tinjau LinkedIn Analytics untuk melihat metrik penting (impresi, engagement rate, demografi audiens).
+    *   Identifikasi jenis konten yang paling disukai audiens dan optimalkan strategi untuk bulan berikutnya.
