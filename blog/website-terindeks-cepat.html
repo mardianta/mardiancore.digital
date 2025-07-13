@@ -6,94 +6,7 @@
   <title>Studi Kasus: Website Mardian Core Digital Terindeks Google < 24 Jam - PT. Mardian Core Digital</title>
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Custom colors for theme */
-    :root {
-      --color-primary: #092f60;
-      --color-secondary: #d69641;
-      --color-whatsapp: #0f7a37;
-      --color-bg: #ffffff;
-      --color-text-primary: #092f60;
-      --color-text-secondary: #d69641;
-    }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--color-bg);
-      color: var(--color-text-primary);
-    }
-    a:hover {
-      color: #fff;
-    }
-    /* Custom section styles */
-    .btn-primary {
-      background-color: var(--color-primary);
-      color: white;
-      transition: background-color 0.3s ease;
-    }
-    .btn-primary:hover {
-      background-color: var(--color-whatsapp);
-    }
-    /* Header logo styling */
-    .logo {
-      font-weight: 700;
-      font-size: 1.5rem;
-      letter-spacing: 1.25px;
-      color: var(--color-primary);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    /* Footer styling */
-    footer {
-      background-color: var(--color-primary);
-      color: white;
-      padding: 1.5rem 0;
-      font-size: 0.875rem;
-    }
-    /* Blog specific styles */
-    .prose {
-      color: #333;
-    }
-    .prose h2 {
-      color: var(--color-primary);
-      font-weight: 600;
-      margin-top: 2em;
-      margin-bottom: 1em;
-      font-size: 1.5em;
-    }
-    .prose a {
-      color: var(--color-secondary);
-      text-decoration: none;
-    }
-    .prose a:hover {
-      color: var(--color-whatsapp);
-    }
-    .prose code {
-        background-color: #f3f4f6;
-        padding: 0.2em 0.4em;
-        margin: 0;
-        font-size: 85%;
-        border-radius: 3px;
-    }
-    .float{
-      position:fixed;
-      width:60px;
-      height:60px;
-      bottom:40px;
-      right:40px;
-      background-color: var(--color-whatsapp);
-      color:#FFF;
-      border-radius:50px;
-      text-align:center;
-      font-size:30px;
-      box-shadow: 2px 2px 3px #99999940;
-      z-index:100;
-    }
-
-    .my-float{
-      margin-top:16px;
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body class="antialiased">
 
@@ -184,31 +97,6 @@
     </div>
   </footer>
 
-  <script>
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const iconOpen = document.getElementById('icon-open');
-    const iconClose = document.getElementById('icon-close');
-    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-
-    const toggleMenu = () => {
-      const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
-      mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
-      mobileMenu.classList.toggle('hidden');
-      iconOpen.classList.toggle('hidden');
-      iconClose.classList.toggle('hidden');
-    };
-
-    mobileMenuButton.addEventListener('click', toggleMenu);
-
-    // Tutup menu saat link di dalam menu diklik
-    mobileMenuLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        if (mobileMenuButton.getAttribute('aria-expanded') === 'true') {
-          toggleMenu();
-        }
-      });
-    });
-  </script>
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>
