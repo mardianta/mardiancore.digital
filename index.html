@@ -11,6 +11,7 @@
     :root {
       --color-primary: #092f60;
       --color-secondary: #d69641;
+      --color-whatsapp: #0f7a37;
       --color-bg: #ffffff;
       --color-text-primary: #092f60;
       --color-text-secondary: #d69641;
@@ -153,12 +154,12 @@
       height:60px;
       bottom:40px;
       right:40px;
-      background-color:#25d366;
+      background-color: var(--color-whatsapp);
       color:#FFF;
       border-radius:50px;
       text-align:center;
       font-size:30px;
-      box-shadow: 2px 2px 3px #999;
+      box-shadow: 2px 2px 3px #99999940;
       z-index:100;
     }
 
@@ -175,11 +176,13 @@
         <img src="logo.png" style="width:160px;" alt="" srcset="">
       </div>
       <ul class="hidden md:flex space-x-8 text-sm font-semibold">
-        <li><a href="#home" class="hover:text-secondary transition-colors">Home</a></li>
-        <li><a href="#about" class="hover:text-secondary transition-colors">About</a></li>
-        <li><a href="#services" class="hover:text-secondary transition-colors">Services</a></li>
-        <li hidden><a href="#team" class="hover:text-secondary transition-colors">Team</a></li>
-        <li><a href="#contact" class="hover:text-secondary transition-colors">Contact</a></li>
+        <li><a href="#home" class="hover:text-secondary transition-colors">Beranda</a></li>
+        <li><a href="#about" class="hover:text-secondary transition-colors">Tentang Kami</a></li>
+        <li><a href="#services" class="hover:text-secondary transition-colors">Layanan</a></li>
+        <li hidden><a href="#team" class="hover:text-secondary transition-colors">Tim</a></li>
+        <li>
+          <a href="#contact" class="btn-primary px-4 py-2 rounded-md text-sm font-semibold">Hubungi Kami</a>
+        </li>
       </ul>
       <!-- Mobile menu button -->
       <div class="md:hidden">
@@ -199,10 +202,12 @@
     <!-- Menu Mobile, tampil/sembunyi berdasarkan state menu. -->
     <div class="md:hidden hidden" id="mobile-menu">
       <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <li><a href="#home" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Home</a></li>
-        <li><a href="#about" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">About</a></li>
-        <li><a href="#services" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Services</a></li>
-        <li><a href="#contact" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Contact</a></li>
+        <li><a href="#home" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Beranda</a></li>
+        <li><a href="#about" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Tentang Kami</a></li>
+        <li><a href="#services" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Layanan</a></li>
+        <li class="mt-2">
+          <a href="#contact" class="block text-center btn-primary px-3 py-2 rounded-md text-base font-medium">Hubungi via WhatsApp</a>
+        </li>
       </ul>
     </div>
   </header>
@@ -348,7 +353,7 @@
       <div class="text-center">
         <a href="https://api.whatsapp.com/send?phone=6283852166740&text=Halo%20PT.%20Mardian%20Core%20Digital,%20saya%20tertarik%20untuk%20menjadwalkan%20konsultasi%20gratis%20mengenai%20layanan%20Anda." 
            target="_blank" 
-           class="btn-primary px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center hover:bg-secondary transition-colors">
+           class="btn-primary px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center hover:bg-[var(--color-whatsapp)] transition-colors">
           <i class="fa fa-whatsapp mr-3" style="font-size: 1.25em;"></i>
           Mulai Konsultasi via WhatsApp
         </a>
