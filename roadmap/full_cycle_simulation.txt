@@ -1,0 +1,141 @@
+SIMULASI SIKLUS LENGKAP PROYEK (DARI AWAL HINGGA SELESAI)
+
+**Skenario:**
+- **Pengirim:** Mardianta Putra (PT. Mardian Core Digital)
+- **Prospek:** Bengkel Mobil Pak Budi (dari `prospect_list_template.txt`)
+- **Kontak:** Bapak Anton (Anak dari Pak Budi, yang membantu mengelola bengkel)
+- **Kebutuhan:** Aplikasi booking servis sederhana dan website profil.
+
+---
+**FASE 1: PENDEKATAN & DISKUSI**
+---
+
+**1. Email Perkenalan Awal**
+
+**Subjek:** Peluang Digital untuk Bengkel Mobil Pak Budi
+
+**Isi:**
+Yth. Bapak Anton,
+
+Perkenalkan, saya Mardianta Putra dari PT. Mardian Core Digital, sebuah perusahaan software di Surabaya. Saya adalah salah satu pelanggan setia di bengkel Bapak dan sangat terkesan dengan kualitas pelayanannya.
+
+Saya melihat saat ini proses booking servis masih dilakukan via telepon atau datang langsung. Kami memiliki keahlian dalam membuat aplikasi booking sederhana dan website profil yang bisa membantu pelanggan menjadwalkan servis dengan lebih mudah dan menampilkan layanan unggulan bengkel Anda secara online.
+
+Apakah Bapak bersedia untuk berdiskusi singkat 15-20 menit minggu depan? Saya ingin menunjukkan bagaimana solusi digital ini bisa membantu bengkel Bapak menjadi lebih efisien.
+
+Terima kasih,
+Mardianta Putra
+PT. Mardian Core Digital
+
+---
+
+**2. Respons Positif & Penjadwalan Pertemuan**
+
+**Subjek:** Re: Peluang Digital untuk Bengkel Mobil Pak Budi
+
+**Isi:**
+Halo Mas Mardianta, terima kasih emailnya. Wah, kebetulan sekali. Kami memang sedang berpikir untuk modernisasi bengkel. Boleh, saya ada waktu hari Rabu jam 2 siang. Bagaimana?
+
+Salam,
+Anton
+
+---
+**FASE 2: PROPOSAL & CLOSING**
+---
+
+**3. Email Pasca-Pertemuan & Pengiriman Proposal**
+
+**Subjek:** Rangkuman Diskusi & Proposal untuk Bengkel Mobil Pak Budi
+
+**Isi:**
+Yth. Bapak Anton,
+
+Terima kasih banyak atas waktu diskusi kita kemarin. Sangat menarik mendengar visi Bapak untuk Bengkel Pak Budi.
+
+Sesuai diskusi, kami memahami kebutuhannya adalah:
+1.  Website profil sederhana untuk menampilkan info, layanan, dan lokasi.
+2.  Aplikasi booking online untuk pelanggan agar bisa memilih jadwal servis.
+
+Terlampir adalah proposal penawaran sederhana untuk proyek tersebut. Di dalamnya terdapat rincian fitur, estimasi waktu pengerjaan, dan biaya.
+
+Jangan ragu untuk bertanya jika ada yang kurang jelas.
+
+Terima kasih,
+Mardianta Putra
+
+*(Di sini Anda akan melampirkan file PDF proposal sederhana)*
+
+---
+
+**4. Negosiasi & Closing (via WhatsApp)**
+
+**Anton:** Siang Mas Mardianta, proposal sudah saya terima. Untuk biayanya apakah bisa sedikit lebih ringan untuk proyek pertama ini?
+
+**Anda:** Siang Pak Anton. Tentu, kami memahami. Sebagai penawaran awal kerjasama, kami bisa berikan diskon 10% dari total biaya. Bagaimana, Pak?
+
+**Anton:** Oke, kalau begitu kami setuju. Apa langkah selanjutnya?
+
+**Anda:** Baik, Pak. Terima kasih atas kepercayaannya. Saya akan siapkan surat perjanjian kerjasama sederhana dan invoice untuk DP 50%. Setelah itu, kita bisa langsung mulai proyeknya.
+
+---
+**FASE 3: EKSEKUSI PROYEK**
+---
+
+**5. Email Update Progres Mingguan**
+
+**Subjek:** Update Progres Proyek Bengkel Pak Budi - Minggu ke-2
+
+**Isi:**
+Yth. Bapak Anton,
+
+Berikut adalah update progres untuk minggu ini:
+- Desain UI/UX untuk website dan aplikasi sudah selesai (terlampir screenshot).
+- Pengembangan halaman utama website sudah 80% rampung.
+- Minggu depan, kami akan fokus pada pengembangan fitur booking di aplikasi.
+
+Mohon masukannya untuk desain yang terlampir. Terima kasih.
+
+Salam,
+Mardianta Putra
+
+---
+**FASE 4: PENYELESAIAN & SERAH TERIMA**
+---
+
+**6. Email Serah Terima Proyek**
+
+**Subjek:** Serah Terima Proyek Website & Aplikasi Bengkel Mobil Pak Budi
+
+**Isi:**
+Yth. Bapak Anton,
+
+Dengan senang hati kami informasikan bahwa proyek pengembangan website dan aplikasi booking untuk Bengkel Mobil Pak Budi telah selesai dan diuji sepenuhnya.
+
+Website sudah live di [alamat-website.com] dan aplikasi sudah bisa diunduh melalui link berikut. Terlampir juga panduan penggunaan sederhana dan semua data login yang dibutuhkan.
+
+Kami juga melampirkan invoice untuk pelunasan sisa pembayaran.
+
+Terima kasih banyak atas kerjasama yang luar biasa ini.
+
+Hormat kami,
+Mardianta Putra
+
+---
+
+**7. Email Permintaan Testimoni (1-2 minggu setelah serah terima)**
+
+**Subjek:** Mohon Sedikit Waktu untuk Testimoni
+
+**Isi:**
+Yth. Bapak Anton,
+
+Semoga website dan aplikasi barunya berjalan lancar dan bermanfaat.
+
+Jika berkenan, kami akan sangat berterima kasih apabila Bapak bisa memberikan testimoni singkat mengenai pengalaman bekerjasama dengan kami. Testimoni ini akan sangat berarti bagi kami sebagai perusahaan yang baru berkembang.
+
+Sebagai referensi, mungkin Bapak bisa menceritakan bagaimana solusi kami membantu operasional bengkel.
+
+Terima kasih banyak atas dukungan Bapak.
+
+Salam hangat,
+Mardianta Putra
