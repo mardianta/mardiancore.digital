@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - PT. Mardian Core Digital</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body class="antialiased">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="logo">
+        <a href="../index.html"><img src="../logo.png" style="width:160px;" alt="Logo PT. Mardian Core Digital"></a>
+      </div>
+      <ul class="hidden md:flex space-x-8 text-sm font-semibold items-center">
+        <li><a href="../index.html#home" class="hover:text-secondary transition-colors">Beranda</a></li>
+        <li><a href="../index.html#about" class="hover:text-secondary transition-colors">Tentang Kami</a></li>
+        <li><a href="../index.html#services" class="hover:text-secondary transition-colors">Layanan</a></li>
+        <li><a href="index.html" class="text-secondary font-bold transition-colors">Blog</a></li>
+        <li>
+          <a href="../index.html#contact" class="btn-primary px-4 py-2 rounded-md text-sm font-semibold">Hubungi Kami</a>
+        </li>
+      </ul>
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Buka menu utama</span>
+          <svg id="icon-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="icon-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Menu Mobile, tampil/sembunyi berdasarkan state menu. -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <li><a href="../index.html#home" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Beranda</a></li>
+        <li><a href="../index.html#about" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Tentang Kami</a></li>
+        <li><a href="../index.html#services" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Layanan</a></li>
+        <li><a href="index.html" class="text-secondary font-bold block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Blog</a></li>
+        <li class="mt-2">
+          <a href="../index.html#contact" class="block text-center btn-primary px-3 py-2 rounded-md text-base font-medium">Hubungi via WhatsApp</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <div class="mb-12 border-b pb-4">
+        <h1 class="text-4xl md:text-5xl font-bold text-primary leading-tight">Blog</h1>
+        <p class="text-gray-600 mt-2 text-lg">Wawasan, studi kasus, dan berita terbaru dari tim Mardian Core Digital.</p>
+    </div>
+    
+    <div class="space-y-16">
+        <!-- Blog Post 1 -->
+        <article>
+            <h2 class="text-2xl md:text-3xl font-bold text-primary mb-2 leading-snug">
+                <a href="website-terindeks-cepat.html" class="hover:text-secondary transition-colors">Studi Kasus: Website Mardian Core Digital Terindeks Google Kurang dari 24 Jam</a>
+            </h2>
+            <p class="text-gray-600 mb-4">Sebagai perusahaan yang baru, kami ingin berbagi sebuah pencapaian kecil namun signifikan yang menunjukkan fondasi teknis kami: website baru kami, mardiancore.digital, berhasil terindeks oleh Google dalam waktu kurang dari 24 jam...</p>
+            <a href="website-terindeks-cepat.html" class="font-semibold text-secondary hover:text-whatsapp transition-colors">Baca Selengkapnya &rarr;</a>
+        </article>
+        
+        <!-- Blog Post 2 -->
+        <article>
+            <h2 class="text-2xl md:text-3xl font-bold text-primary mb-2 leading-snug">
+                <a href="5-tanda-bisnis-butuh-website.html" class="hover:text-secondary transition-colors">5 Tanda Bisnis Anda Membutuhkan Website Profesional Sekarang Juga</a>
+            </h2>
+            <p class="text-gray-600 mb-4">Di era digital saat ini, memiliki kehadiran online adalah sebuah keharusan. Banyak pemilik bisnis, terutama UKM, merasa cukup dengan hanya memiliki akun media sosial. Namun, apakah itu benar-benar cukup untuk bersaing dan tumbuh?</p>
+            <a href="5-tanda-bisnis-butuh-website.html" class="font-semibold text-secondary hover:text-whatsapp transition-colors">Baca Selengkapnya &rarr;</a>
+        </article>
+    </div>
+  </main>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=6283852166740&text=Halo%20PT.%20Mardian%20Core%20Digital,%20saya%20telah%20melihat%20informasi%20tentang%20layanan%20Anda:%20pengembangan%20aplikasi,%20pengembangan%20website,%20dan%20solusi%20keamanan%20digital.%20Saya%20ingin%20berdiskusi%20lebih%20lanjut%20bagaimana%20layanan%20Anda%20dapat%20mengakselerasi%20pertumbuhan%20bisnis%20saya.%20Mohon%20informasinya." class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
+
+  <footer role="contentinfo" aria-label="Footer copyright and social info">
+    <div class="text-center">
+      <p>© 2025 PT. Mardian Core Digital. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
