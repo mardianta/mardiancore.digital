@@ -1,0 +1,41 @@
+10 SARAN PEMBARUAN KONTEN UNTUK WEBSITE (DIPRIORITASKAN UNTUK PERUSAHAAN BARU)
+
+1.  **Bagian Testimoni Klien**
+    - **Prioritas:** Sangat Tinggi. Ini adalah prioritas utama karena bukti sosial (social proof) dari pihak ketiga adalah cara paling efektif untuk membangun kepercayaan bagi perusahaan baru.
+    - **Konten:** Tampilkan 1-3 kutipan dari klien awal yang puas. Sertakan nama, jabatan, dan perusahaan mereka (dengan izin) untuk kredibilitas maksimal. Letakkan di halaman utama.
+
+2.  **Bagian Portofolio / Studi Kasus**
+    - **Prioritas:** Sangat Tinggi. Setelah testimoni, calon klien ingin melihat bukti kerja nyata.
+    - **Konten:** Tampilkan 1-2 proyek terbaik yang pernah dikerjakan, meskipun skalanya kecil. Fokus pada penjelasan "Masalah -> Solusi Kami -> Hasil". Ini menunjukkan kemampuan Anda dalam menyelesaikan masalah.
+
+3.  **Detail Proses Kerja Kami**
+    - **Prioritas:** Tinggi. Ini menunjukkan profesionalisme dan transparansi, yang dapat mengurangi keraguan calon klien.
+    - **Konten:** Buat bagian sederhana (bisa dengan ikon) yang menjelaskan alur kerja Anda: 1. Konsultasi & Analisis -> 2. Desain & Perencanaan -> 3. Pengembangan -> 4. Pengujian & Peluncuran.
+
+4.  **Penawaran Konsultasi Gratis (CTA Spesifik)**
+    - **Prioritas:** Tinggi. Tujuannya adalah mengubah pengunjung menjadi prospek (lead).
+    - **Konten:** Ganti tombol/ajakan "Hubungi Kami" menjadi lebih spesifik dan tidak mengintimidasi, seperti "Jadwalkan Konsultasi Gratis" atau "Dapatkan Analisis Kebutuhan Gratis".
+
+5.  **Halaman FAQ (Frequently Asked Questions)**
+    - **Prioritas:** Sedang. Berguna untuk menunjukkan bahwa Anda memahami kekhawatiran klien dan sudah memiliki jawaban.
+    - **Konten:** Mulai dengan 5-7 pertanyaan paling umum yang mungkin ditanyakan klien baru. Contoh: "Bagaimana proses pembayarannya?", "Apakah saya akan mendapatkan source code-nya?", "Layanan purnajual apa yang tersedia?".
+
+7.  **Bagian "Teknologi yang Kami Gunakan"**
+    - **Prioritas:** Sedang. Ini membangun kredibilitas teknis.
+    - **Konten:** Cukup tampilkan logo-logo teknologi utama yang Anda kuasai. Ini secara visual mengkomunikasikan keahlian Anda tanpa perlu penjelasan panjang.
+
+8.  **Peta Lokasi Interaktif & Info Kontak Lengkap**
+    - **Prioritas:** Sedang. Menampilkan alamat fisik yang jelas dan peta meningkatkan rasa aman dan legitimasi.
+    - **Konten:** Di bagian kontak, tampilkan alamat lengkap, nomor telepon, email, dan sematkan peta Google Maps. Pastikan informasi ini mudah ditemukan.
+
+9.  **Halaman Kebijakan Privasi & Syarat Layanan**
+    - **Prioritas:** Rendah (tapi penting untuk jangka panjang). Ini adalah tanda profesionalisme dan penting untuk kepatuhan hukum, terutama jika ada formulir kontak.
+    - **Konten:** Buat halaman dasar untuk "Kebijakan Privasi" dan tautkan di footer. Bisa menggunakan template standar terlebih dahulu.
+
+10. **Halaman Blog atau Artikel Wawasan**
+    - **Prioritas:** Rendah. Strategi konten seperti blog sangat baik untuk SEO dan thought leadership, namun hasilnya membutuhkan waktu. Untuk perusahaan baru, fokus pada konversi langsung lebih mendesak.
+    - **Konten:** Bisa dimulai nanti setelah elemen-elemen kepercayaan dasar sudah terbangun.
+
+11. **Halaman "Karier / Bergabunglah dengan Kami"**
+    - **Prioritas:** Sangat Rendah. Ini hanya relevan jika Anda sedang aktif merekrut. Untuk saat ini, fokus utama adalah mendapatkan klien, bukan karyawan.
+    - **Konten:** Bisa ditambahkan jauh di kemudian hari. Informasi kolaborasi dengan freelance di halaman "Tentang Kami" sudah cukup.
