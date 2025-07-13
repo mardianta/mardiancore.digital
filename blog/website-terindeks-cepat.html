@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Studi Kasus: Website Mardian Core Digital Terindeks Google < 24 Jam - PT. Mardian Core Digital</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom colors for theme */
+    :root {
+      --color-primary: #092f60;
+      --color-secondary: #d69641;
+      --color-whatsapp: #0f7a37;
+      --color-bg: #ffffff;
+      --color-text-primary: #092f60;
+      --color-text-secondary: #d69641;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-text-primary);
+    }
+    a:hover {
+      color: #fff;
+    }
+    /* Custom section styles */
+    .btn-primary {
+      background-color: var(--color-primary);
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: var(--color-whatsapp);
+    }
+    /* Header logo styling */
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 1.25px;
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    /* Footer styling */
+    footer {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 1.5rem 0;
+      font-size: 0.875rem;
+    }
+    /* Blog specific styles */
+    .prose {
+      color: #333;
+    }
+    .prose h2 {
+      color: var(--color-primary);
+      font-weight: 600;
+      margin-top: 2em;
+      margin-bottom: 1em;
+      font-size: 1.5em;
+    }
+    .prose a {
+      color: var(--color-secondary);
+      text-decoration: none;
+    }
+    .prose a:hover {
+      color: var(--color-whatsapp);
+    }
+    .prose code {
+        background-color: #f3f4f6;
+        padding: 0.2em 0.4em;
+        margin: 0;
+        font-size: 85%;
+        border-radius: 3px;
+    }
+    .float{
+      position:fixed;
+      width:60px;
+      height:60px;
+      bottom:40px;
+      right:40px;
+      background-color: var(--color-whatsapp);
+      color:#FFF;
+      border-radius:50px;
+      text-align:center;
+      font-size:30px;
+      box-shadow: 2px 2px 3px #99999940;
+      z-index:100;
+    }
+
+    .my-float{
+      margin-top:16px;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="logo">
+        <a href="../index.html"><img src="../logo.png" style="width:160px;" alt="Logo PT. Mardian Core Digital"></a>
+      </div>
+      <ul class="hidden md:flex space-x-8 text-sm font-semibold">
+        <li><a href="../index.html#home" class="hover:text-secondary transition-colors">Beranda</a></li>
+        <li><a href="../index.html#about" class="hover:text-secondary transition-colors">Tentang Kami</a></li>
+        <li><a href="../index.html#services" class="hover:text-secondary transition-colors">Layanan</a></li>
+        <li>
+          <a href="../index.html#contact" class="btn-primary px-4 py-2 rounded-md text-sm font-semibold">Hubungi Kami</a>
+        </li>
+      </ul>
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Buka menu utama</span>
+          <svg id="icon-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="icon-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Menu Mobile, tampil/sembunyi berdasarkan state menu. -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <li><a href="../index.html#home" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Beranda</a></li>
+        <li><a href="../index.html#about" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Tentang Kami</a></li>
+        <li><a href="../index.html#services" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Layanan</a></li>
+        <li class="mt-2">
+          <a href="../index.html#contact" class="block text-center btn-primary px-3 py-2 rounded-md text-base font-medium">Hubungi via WhatsApp</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-6 py-16">
+    <article class="prose lg:prose-xl bg-white p-8 md:p-12 rounded-lg shadow-lg">
+      
+      <div class="mb-8 border-b pb-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Studi Kasus: Website Mardian Core Digital Terindeks Google Kurang dari 24 Jam</h1>
+        <p class="text-gray-500 mt-2">Oleh Tim Mardian Core Digital</p>
+      </div>
+
+      <p>Sebagai perusahaan yang baru, kami ingin berbagi sebuah pencapaian kecil namun signifikan yang menunjukkan fondasi teknis kami: website baru kami, <strong>mardiancore.digital</strong>, berhasil terindeks oleh Google dalam waktu kurang dari 24 jam setelah diluncurkan.</p>
+      <p>Bagi domain yang benar-benar baru, proses ini terkadang bisa memakan waktu berhari-hari atau bahkan berminggu-minggu. Kecepatan ini bukanlah kebetulan, melainkan hasil dari praktik terbaik Technical SEO yang kami terapkan sejak baris kode pertama.</p>
+
+      <h2>Apa Artinya "Terindeks Google"?</h2>
+      <p>Secara sederhana, "terindeks" berarti Google telah menemukan website kami, membacanya, memahami isinya, dan menyimpannya dalam database raksasa miliknya. Setelah terindeks, website kami menjadi layak untuk ditampilkan dalam hasil pencarian ketika seseorang mencari kata kunci yang relevan.</p>
+
+      <h2>Bagaimana Kami Melakukannya?</h2>
+      <p>Tidak ada sihir, yang ada hanya praktik rekayasa perangkat lunak yang solid dan pemahaman mendalam tentang cara kerja mesin pencari. Berikut adalah beberapa pilar utama yang kami terapkan:</p>
+      <ul>
+        <li><strong>Kode yang Bersih dan Semantik:</strong> Kami membangun situs dengan struktur HTML yang bersih dan valid. Ini memudahkan "robot" Google untuk menjelajahi dan memahami hierarki konten kami.</li>
+        <li><strong>Kecepatan Muat Halaman:</strong> Kami memastikan semua aset seperti gambar dan skrip dioptimalkan untuk meminimalkan waktu muat. Situs yang cepat memberikan pengalaman pengguna yang lebih baik dan disukai oleh Google.</li>
+        <li><strong>Desain Mobile-First:</strong> Website kami dirancang untuk tampil sempurna di perangkat mobile terlebih dahulu, karena mayoritas pencarian saat ini berasal dari ponsel.</li>
+        <li><strong>Konfigurasi Google Search Console:</strong> Kami secara proaktif mendaftarkan domain kami ke Google Search Console dan mengirimkan <code>sitemap.xml</code>. Ini seperti memberikan peta jalan langsung kepada Google, mempercepat proses penemuan.</li>
+      </ul>
+
+      <h2>Apa Artinya Ini Untuk Bisnis Anda?</h2>
+      <p>Prinsip dan perhatian terhadap detail yang sama kami terapkan untuk situs kami sendiri, juga akan kami terapkan untuk proyek Anda. Kami tidak hanya membangun website yang terlihat bagus, kami membangun aset digital yang siap ditemukan, berkinerja tinggi, dan menjadi fondasi yang kuat untuk pertumbuhan bisnis Anda.</p>
+
+      <hr class="my-8">
+
+      <div class="bg-gray-100 p-6 rounded-lg text-center">
+        <h3 class="text-xl font-semibold text-gray-900">Jangan Biarkan Bisnis Anda Tak Terlihat</h3>
+        <p class="mt-2">Pastikan website Anda dibangun dengan benar sejak awal. Hubungi kami untuk diskusi tentang bagaimana kami dapat membangun fondasi digital yang kuat untuk bisnis Anda.</p>
+        <a href="../index.html#contact" class="btn-primary mt-6">Jadwalkan Konsultasi Gratis</a>
+      </div>
+
+    </article>
+  </main>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=6283852166740&text=Halo%20PT.%20Mardian%20Core%20Digital,%20saya%20telah%20melihat%20informasi%20tentang%20layanan%20Anda:%20pengembangan%20aplikasi,%20pengembangan%20website,%20dan%20solusi%20keamanan%20digital.%20Saya%20ingin%20berdiskusi%20lebih%20lanjut%20bagaimana%20layanan%20Anda%20dapat%20mengakselerasi%20pertumbuhan%20bisnis%20saya.%20Mohon%20informasinya." class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
+
+  <footer role="contentinfo" aria-label="Footer copyright and social info">
+    <div class="text-center">
+      <p>© 2025 PT. Mardian Core Digital. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+    const toggleMenu = () => {
+      const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+      mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    };
+
+    mobileMenuButton.addEventListener('click', toggleMenu);
+
+    // Tutup menu saat link di dalam menu diklik
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (mobileMenuButton.getAttribute('aria-expanded') === 'true') {
+          toggleMenu();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
