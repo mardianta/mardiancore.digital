@@ -1,0 +1,79 @@
+======================================================================
+PROPOSAL PENAWARAN PENGEMBANGAN WEBSITE & APLIKASI BOOKING
+======================================================================
+
+**Untuk:** Bengkel Mobil Pak Budi
+**Dari:** PT. Mardian Core Digital
+**Tanggal:** [Tanggal Hari Ini]
+**Nomor Proposal:** MCD/PRO/2025/001
+
+---
+
+**1. PENDAHULUAN**
+
+Dokumen ini dibuat sebagai tindak lanjut dari diskusi antara Bapak Anton (Bengkel Mobil Pak Budi) dan Mardianta Putra (PT. Mardian Core Digital). Proposal ini menguraikan solusi digital yang kami tawarkan untuk membantu memodernisasi dan meningkatkan efisiensi operasional bengkel.
+
+---
+
+**2. PEMAHAMAN KEBUTUHAN**
+
+Kami memahami bahwa tantangan utama saat ini adalah proses booking servis yang masih manual dan kurangnya kehadiran online yang profesional. Tujuannya adalah untuk mempermudah pelanggan dalam menjadwalkan servis dan meningkatkan citra bengkel di dunia digital.
+
+---
+
+**3. SOLUSI YANG DITAWARKAN**
+
+Kami menawarkan pengembangan dua platform digital yang terintegrasi:
+
+**A. Website Profil Profesional:**
+   - **Desain Modern & Responsif:** Tampilan profesional yang bekerja baik di komputer maupun HP.
+   - **Halaman Utama:** Menampilkan informasi umum, keunggulan, dan jam operasional.
+   - **Halaman Layanan:** Daftar lengkap jenis servis yang ditawarkan.
+   - **Halaman Kontak:** Alamat, nomor telepon, dan peta lokasi Google Maps.
+
+**B. Aplikasi Booking Servis Sederhana (Berbasis Web):**
+   - **Formulir Booking Online:** Pelanggan dapat mengisi data diri, jenis mobil, memilih layanan, dan memilih tanggal/jam servis yang tersedia.
+   - **Notifikasi untuk Bengkel:** Setiap ada booking baru, sistem akan mengirimkan notifikasi ke email admin bengkel.
+   - **Dashboard Admin:** Halaman sederhana bagi admin untuk melihat daftar booking yang masuk.
+
+---
+
+**4. ESTIMASI WAKTU PENGERJAAN**
+
+Berikut adalah perkiraan alur waktu proyek dari awal hingga selesai:
+
+- **Minggu 1-2:** Perencanaan & Desain Tampilan (UI/UX)
+- **Minggu 3-5:** Pengembangan Website & Aplikasi Booking
+- **Minggu 6:** Pengujian Internal & Perbaikan Bug
+- **Minggu 7:** Uji Coba oleh Klien & Revisi Final
+- **Minggu 8:** Peluncuran (Go-Live) & Pelatihan Singkat
+
+**Total Estimasi Waktu: 8 Minggu**
+
+---
+
+**5. RINCIAN INVESTASI**
+
+- Pengembangan Website Profil Profesional: Rp 5.000.000
+- Pengembangan Aplikasi Booking Sederhana: Rp 7.000.000
+---------------------------------------------------------
+**Subtotal:**                                **Rp 12.000.000**
+
+---
+
+**6. SYARAT PEMBAYARAN**
+
+- **50% Uang Muka:** Rp 6.000.000 (Dibayarkan sebelum proyek dimulai).
+- **50% Pelunasan:** Rp 6.000.000 (Dibayarkan setelah proyek selesai dan diserahterimakan).
+
+---
+
+**7. LANGKAH SELANJUTNYA**
+
+Jika proposal ini disetujui, langkah berikutnya adalah penandatanganan surat perjanjian kerjasama sederhana dan pembayaran uang muka untuk memulai proyek.
+
+Terima kasih atas kesempatan yang diberikan. Kami berharap dapat menjadi mitra digital bagi kesuksesan Bengkel Mobil Pak Budi.
+
+**Hormat kami,**
+Mardianta Putra
+PT. Mardian Core Digital
