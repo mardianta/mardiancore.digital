@@ -1,0 +1,15 @@
+CONTOH DAFTAR PROSPEK KLIEN - PT. MARDIAN CORE DIGITAL
+
+Gunakan format ini untuk melacak prospek Anda. Isi hingga mencapai minimal 30 prospek.
+
+------------------------------------------------------------------------------------------------------------------
+| No. | Nama Bisnis / Kontak   | Sumber         | Potensi Kebutuhan                               | Status             | Catatan                                        |
+------------------------------------------------------------------------------------------------------------------
+| 1.  | Kopi Senja Surabaya      | Google Maps    | Website baru, sistem menu online                | Belum Dihubungi    | Website lama tidak mobile-friendly.            |
+| 2.  | Bengkel Mobil Pak Budi   | Kenalan Ayah   | Aplikasi booking servis, website profil         | Belum Dihubungi    | Masih menggunakan pencatatan manual.           |
+| 3.  | Drg. Anita & Rekan     | Iklan Lokal    | Sistem pendaftaran pasien online, keamanan data | Belum Dihubungi    | Bisa ditawarkan layanan Digital Campus/Secure. |
+| 4.  | Catering Ibu Rina        | Instagram      | Website e-commerce untuk pemesanan paket      | Belum Dihubungi    | Penjualan masih via WhatsApp.                  |
+| 5.  | ...                    |                |                                                 |                    |                                                |
+| ... |                        |                |                                                 |                    |                                                |
+| 30. |                        |                |                                                 |                    |                                                |
+------------------------------------------------------------------------------------------------------------------
