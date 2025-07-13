@@ -32,7 +32,7 @@
     - **Prioritas:** Rendah (tapi penting untuk jangka panjang). Ini adalah tanda profesionalisme dan penting untuk kepatuhan hukum, terutama jika ada formulir kontak.
     - **Konten:** Buat halaman dasar untuk "Kebijakan Privasi" dan tautkan di footer. Bisa menggunakan template standar terlebih dahulu.
 
-10. **Halaman Blog atau Artikel Wawasan**
+10. **Halaman Blog atau Artikel Tips**
     - **Prioritas:** Rendah. Strategi konten seperti blog sangat baik untuk SEO dan thought leadership, namun hasilnya membutuhkan waktu. Untuk perusahaan baru, fokus pada konversi langsung lebih mendesak.
     - **Konten:** Bisa dimulai nanti setelah elemen-elemen kepercayaan dasar sudah terbangun.
 
