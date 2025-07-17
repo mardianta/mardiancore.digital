@@ -1,0 +1,80 @@
+KONSEP TEKNIS: PEMBARUAN OTOMATIS ARTIKEL POPULER VIA SERVERLESS
+
+======================================================================
+TUJUAN
+======================================================================
+Secara otomatis memperbarui daftar artikel populer di website statis
+dengan mengambil data langsung dari Google Analytics Data API tanpa
+mengekspos kredensial rahasia di sisi klien.
+
+
+======================================================================
+ARSITEKTUR & ALUR KERJA
+======================================================================
+
+1.  PENGUMPULAN DATA (Google Analytics 4):
+    - Situs web sudah terpasang dengan tracking code GA4.
+    - GA4 secara pasif mengumpulkan data pageviews untuk setiap URL artikel.
+
+2.  PROSES OTOMATIS (GitHub Actions - Serverless Worker):
+    - Sebuah workflow GitHub Actions akan berjalan sesuai jadwal (misal: setiap 24 jam).
+    - Workflow ini akan menjalankan sebuah skrip (disarankan Python atau Node.js).
+    - Skrip ini bertindak sebagai "backend sementara" yang aman.
+
+3.  EKSEKUSI SKRIP DALAM GITHUB ACTIONS:
+    a.  **Otentikasi:** Skrip melakukan otentikasi ke Google Cloud Platform menggunakan Service Account Key yang disimpan dengan aman sebagai GitHub Secret.
+    b.  **Meminta Data:** Skrip membuat panggilan ke Google Analytics Data API untuk meminta laporan 'Top Pages'.
+        -   **Dimensi:** `pagePath` (jalur halaman, misal: /blog/artikel-a.html)
+        -   **Metrik:** `screenPageViews` (jumlah tampilan)
+        -   **Filter:** `pagePath` harus mengandung '/blog/' untuk memastikan hanya artikel yang dihitung.
+        -   **Rentang Tanggal:** 30 hari terakhir (last 30 days).
+        -   **Batas:** 5 hasil teratas (top 5).
+    c.  **Mengolah Data:** Skrip menerima respons dari API, lalu melakukan parsing:
+        -   Mengekstrak `pagePath` dari setiap baris data.
+        -   Mengonversi `pagePath` menjadi `slug` artikel (misal: dari '/blog/artikel-a.html' menjadi 'artikel-a').
+    d.  **Menulis File Statis:** Skrip membuat atau menimpa file `blog/popular-posts.json` dengan array berisi slug-slug yang sudah diolah.
+    e.  **Commit & Push:** Jika ada perubahan pada file `blog/popular-posts.json`, skrip akan secara otomatis melakukan `git add`, `git commit`, dan `git push` kembali ke branch `main` di repository.
+
+4.  PENYAJIAN DI WEBSITE (Sisi Klien - Statis):
+    -   Skrip `homepage-posts.js` di website tidak berubah.
+    -   Ia tetap membaca file statis `blog/popular-posts.json` yang sekarang selalu terbarui secara otomatis.
+    -   Situs tetap cepat karena tidak ada panggilan API real-time dari browser.
+
+
+======================================================================
+LANGKAH-LANGKAH IMPLEMENTASI
+======================================================================
+
+**BAGIAN 1: SETUP SEKALI JALAN (Google Cloud & GitHub)**
+
+1.  **Google Cloud Platform (GCP):**
+    -   Buat proyek GCP baru (atau gunakan yang sudah ada).
+    -   Aktifkan "Google Analytics Data API".
+    -   Buat "Service Account".
+    -   Berikan role "Analytics Reader" ke Service Account tersebut.
+    -   Buat dan unduh file kunci JSON untuk Service Account ini.
+
+2.  **Repository GitHub:**
+    -   Buka Settings > Secrets and variables > Actions.
+    -   Buat "New repository secret".
+    -   Nama Secret: `GCP_CREDENTIALS`
+    -   Value: Salin dan tempel seluruh isi dari file kunci JSON yang diunduh dari GCP.
+    -   Simpan juga GA4 Property ID sebagai secret: `GA_PROPERTY_ID`.
+
+**BAGIAN 2: PENGEMBANGAN WORKFLOW**
+
+1.  **Buat File Workflow Baru:**
+    -   Lokasi: `.github/workflows/update_popular_posts.yml`
+    -   Atur agar berjalan dengan jadwal `schedule: cron: '0 3 * * *'` (setiap hari jam 3 pagi UTC).
+    -   Tambahkan juga trigger `workflow_dispatch` untuk pengujian manual.
+
+2.  **Buat Skrip Eksekutor (misal: `scripts/fetch_ga_data.py`):**
+    -   Gunakan library Google API Client untuk Python.
+    -   Baca kredensial dan property ID dari environment variables yang disediakan oleh GitHub Actions.
+    -   Implementasikan logika untuk meminta, mengolah, dan menulis ulang file `popular-posts.json`.
+    -   Tambahkan logika untuk melakukan `git commit` dan `push` hanya jika file berubah.
+
+3.  **Konfigurasi Workflow `yml`:**
+    -   Setup Python di dalam job.
+    -   Install dependensi (misal: `pip install google-analytics-data`).
+    -   Jalankan skrip Python dengan kredensial yang diambil dari GitHub Secrets.
