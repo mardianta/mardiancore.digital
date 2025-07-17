@@ -151,6 +151,32 @@
       </div>
     </section>
 
+    <!-- ====================================================== -->
+    <!--  BAGIAN BLOG TERBARU - MULAI                            -->
+    <!-- ====================================================== -->
+    <section id="latest-posts" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="section-header text-3xl md:text-4xl">Insight Terbaru dari Blog Kami</h2>
+        <div class="divider mx-auto"></div>
+        <p class="max-w-3xl mx-auto text-gray-600 mb-12">
+          Ikuti perkembangan terbaru, studi kasus, dan tips seputar dunia teknologi yang kami bagikan.
+        </p>
+        
+        <!-- Kontainer ini akan diisi secara dinamis oleh JavaScript -->
+        <div id="latest-posts-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+          <!-- Tampilan loading sementara (opsional) -->
+          <p class="text-center text-gray-500 col-span-3">Memuat artikel terbaru...</p>
+        </div>
+    
+        <div class="mt-12">
+          <a href="blog/" class="btn-primary px-8 py-3 rounded-md font-semibold">Lihat Semua Artikel</a>
+        </div>
+      </div>
+    </section>
+    <!-- ====================================================== -->
+    <!--  BAGIAN BLOG TERBARU - SELESAI                          -->
+    <!-- ====================================================== -->
+
     <section hidden id="team" class="mb-24 max-w-6xl mx-auto" aria-labelledby="team-title">
       <h2 id="team-title" class="section-header text-3xl md:text-4xl mb-2 text-center">Tim Profesional Kami</h2>
       <div class="divider mx-auto"></div>
@@ -223,5 +249,7 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <!-- Skrip untuk memuat artikel terbaru di halaman utama -->
+  <script src="assets/js/homepage-posts.js"></script>
 </body>
 </html>
