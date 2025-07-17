@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       const posts = await response.json();
 
+      // BARU: Urutkan post berdasarkan tanggal (dari terbaru ke terlama)
+      // Ini mengasumsikan format tanggal bisa di-parse. "DD MMMM YYYY" sulit di-parse langsung.
+      // Untuk keandalan, kita akan membalik array saja, dengan asumsi JSON diisi dari terlama ke terbaru.
+      posts.reverse();
+
       // Kosongkan kontainer jika ada konten placeholder
       blogPostListContainer.innerHTML = '';
 
