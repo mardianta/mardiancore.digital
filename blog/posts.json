@@ -1,5 +1,15 @@
 [
   {
+    "slug": "5-tanda-bisnis-butuh-website",
+    "title": "5 Tanda Bisnis Anda Membutuhkan Website Profesional Sekarang Juga",
+    "date": "17 Juli 2025",
+    "summary": "Di era digital saat ini, memiliki kehadiran online adalah sebuah keharusan. Banyak pemilik bisnis, terutama UKM, merasa cukup dengan hanya memiliki akun media sosial. Namun, apakah itu benar-benar cukup untuk bersaing dan tumbuh?",
+    "category": {
+      "name": "Tips",
+      "class": "bg-blue-100 text-blue-800"
+    }
+  },
+  {
     "slug": "cara-agar-website-cepat-terindeks-google",
     "title": "Rahasia di Balik Layar: Cara Membuat Website Cepat Terindeks Google",
     "date": "19 Juli 2025",
@@ -17,16 +27,6 @@
     "category": {
       "name": "Studi Kasus",
       "class": "bg-green-100 text-green-800"
-    }
-  },
-  {
-    "slug": "5-tanda-bisnis-butuh-website",
-    "title": "5 Tanda Bisnis Anda Membutuhkan Website Profesional Sekarang Juga",
-    "date": "17 Juli 2025",
-    "summary": "Di era digital saat ini, memiliki kehadiran online adalah sebuah keharusan. Banyak pemilik bisnis, terutama UKM, merasa cukup dengan hanya memiliki akun media sosial. Namun, apakah itu benar-benar cukup untuk bersaing dan tumbuh?",
-    "category": {
-      "name": "Tips",
-      "class": "bg-blue-100 text-blue-800"
     }
   }
 ]
