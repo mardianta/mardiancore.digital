@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="antialiased">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="logo">
+        <a href="/"><img src="/logo.png" style="width:160px;" alt="Logo {{ .Site.Title }}"></a>
+      </div>
+      <ul class="hidden md:flex space-x-8 text-sm font-semibold items-center">
+        <li><a href="/#home" class="hover:text-secondary transition-colors">Beranda</a></li>
+        <li><a href="/#about" class="hover:text-secondary transition-colors">Tentang Kami</a></li>
+        <li><a href="/#services" class="hover:text-secondary transition-colors">Layanan</a></li>
+        <li><a href="/blog" class="text-secondary font-bold transition-colors">Blog</a></li>
+        <li>
+          <a href="/#contact" class="btn-primary px-4 py-2 rounded-md text-sm font-semibold">Hubungi Kami</a>
+        </li>
+      </ul>
+      <!-- Tombol menu mobile Anda bisa diletakkan di sini -->
+    </nav>
+    <!-- Menu mobile Anda bisa diletakkan di sini -->
+  </header>
+
+  <!-- Ini adalah tempat di mana konten unik setiap halaman akan disisipkan -->
+  <main id="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=6283852166740&text=Halo%20PT.%20Mardian%20Core%20Digital" class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
+
+  <footer role="contentinfo" aria-label="Footer copyright and social info">
+    <div class="text-center py-8">
+      <p>© {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- 
+    Pindahkan JS dari file lama ke /static/js/main.js 
+    Pastikan untuk menghapus logika `blog.js` dan `post-detail.js` karena Hugo yang akan menanganinya
+  -->
+  <script src="/js/main.js"></script>
+</body>
+</html>
