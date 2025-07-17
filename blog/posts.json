@@ -28,5 +28,25 @@
       "name": "Studi Kasus",
       "class": "bg-green-100 text-green-800"
     }
+  },
+  {
+    "slug": "mengapa-keamanan-digital-penting",
+    "title": "Mengapa Keamanan Digital Bukan Lagi Pilihan, Tapi Kewajiban",
+    "date": "20 Juli 2025",
+    "summary": "Di tengah maraknya kebocoran data, melindungi aset digital bisnis adalah sebuah keharusan. Pelajari mengapa investasi pada keamanan digital dapat menyelamatkan reputasi dan keberlangsungan bisnis Anda di masa depan.",
+    "category": {
+      "name": "Keamanan",
+      "class": "bg-red-100 text-red-800"
+    }
+  },
+  {
+    "slug": "kapan-bisnis-butuh-aplikasi-mobile",
+    "title": "Website Saja Tidak Cukup? Kapan Bisnis Anda Membutuhkan Aplikasi Mobile",
+    "date": "21 Juli 2025",
+    "summary": "Banyak bisnis sudah puas dengan memiliki website. Namun, ada titik di mana sebuah aplikasi mobile kustom dapat memberikan keunggulan kompetitif yang signifikan. Kenali tanda-tandanya di sini.",
+    "category": {
+      "name": "Pengembangan Aplikasi",
+      "class": "bg-purple-100 text-purple-800"
+    }
   }
 ]
