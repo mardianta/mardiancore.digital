@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // 'blog/' + '../assets/...' akan menjadi 'assets/...'
         const imageHtml = post.image
           ? `<a href="blog/${post.slug}.html" class="block overflow-hidden group">
-               <img src="blog/${post.image}" alt="Gambar utama untuk ${post.title}" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+               <img src="${post.image}" alt="Gambar utama untuk ${post.title}" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
              </a>`
           : `<a href="blog/${post.slug}.html" class="block">
                <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
