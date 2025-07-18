@@ -37,9 +37,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const postsHTML = recentPosts.map(post => `
-        <a href="${post.slug}.html" class="block group">
-          <p class="font-semibold text-primary group-hover:text-secondary transition-colors">${post.title}</p>
-          <p class="text-sm text-gray-500 mt-1">${post.date}</p>
+        <a href="${post.slug}.html" class="flex items-start space-x-4 group">
+          <img 
+            src="${post.image}" 
+            alt="Thumbnail untuk ${post.title}" 
+            class="w-16 h-16 object-cover rounded-md flex-shrink-0" 
+            loading="lazy">
+          <div>
+            <p class="font-semibold text-primary group-hover:text-secondary transition-colors leading-tight">${post.title}</p>
+            <p class="text-sm text-gray-500 mt-1">${post.date}</p>
+          </div>
         </a>
       `).join('');
 
