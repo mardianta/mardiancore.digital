@@ -53,55 +53,88 @@
     </div>
   </header>
 
-  <main class="max-w-3xl mx-auto px-6 py-16">
-    <article class="prose lg:prose-xl bg-white p-8 md:p-12 rounded-lg shadow-lg">
-      
-      <div class="mb-8 border-b pb-4">
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Rahasia di Balik Layar: Cara Membuat Website Cepat Terindeks Google</h1>
-        <p class="text-gray-500 mt-2">Oleh Tim Mardian Core Digital</p>
-        <p class="text-sm text-gray-500 mt-1">Dipublikasikan pada 19 Juli 2025</p>
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <div class="lg:grid lg:grid-cols-3 lg:gap-x-12">
+
+      <!-- Kolom Konten Utama -->
+      <div class="lg:col-span-2">
+        <article class="prose lg:prose-xl bg-white p-8 md:p-12 rounded-lg shadow-lg">
+          
+          <div class="mb-8 border-b pb-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Rahasia di Balik Layar: Cara Membuat Website Cepat Terindeks Google</h1>
+            <p class="text-gray-500 mt-2">Oleh Tim Mardian Core Digital</p>
+            <p class="text-sm text-gray-500 mt-1">Dipublikasikan pada 19 Juli 2025</p>
+          </div>
+
+          <picture class="my-8 block">
+            <source 
+              type="image/webp" 
+              srcset="../assets/images/blog/cara-agar-website-cepat-terindeks-google/gambar.webp 400w,
+                      ../assets/images/blog/cara-agar-website-cepat-terindeks-google/gambar.webp 800w,
+                      ../assets/images/blog/cara-agar-website-cepat-terindeks-google/gambar.webp 1200w"
+              sizes="(max-width: 768px) 100vw, 800px">
+            <img 
+              src="../assets/images/blog/cara-agar-website-cepat-terindeks-google/gambar.webp" 
+              alt="Ilustrasi website yang sedang di-crawl oleh robot Google." 
+              class="rounded-lg shadow-md w-full h-auto"
+              width="1200" height="675"
+              loading="eager">
+          </picture>
+
+          <p>Memiliki website yang hebat tidak ada artinya jika tidak ada yang bisa menemukannya. Di artikel studi kasus kami sebelumnya, kami menyebutkan bahwa website <strong>mardiancore.digital</strong> berhasil terindeks oleh Google dalam waktu kurang dari 24 jam. Bagaimana caranya?</p>
+          <p>Proses ini bukanlah kebetulan, melainkan hasil dari serangkaian praktik terbaik *Technical SEO* (Search Engine Optimization) yang kami terapkan. Mari kita bedah beberapa "rahasia" tersebut.</p>
+
+          <h2>1. Memberi Peta Jalan kepada Google: `sitemap.xml`</h2>
+          <p>Bayangkan Anda memasuki sebuah kota besar tanpa peta. Anda mungkin akan tersesat. Begitu pula dengan robot Google saat mengunjungi website Anda. Sebuah file bernama <code>sitemap.xml</code> berfungsi sebagai peta yang jelas, berisi daftar semua halaman penting yang ingin Anda tunjukkan kepada Google.</p>
+          <p>Dengan menyediakan peta situs, kita secara proaktif memberitahu Google, "Ini halaman-halaman saya, tolong indeks semuanya." Ini jauh lebih efisien daripada membiarkan Google menebak-nebak.</p>
+
+          <h2>2. Mengatur Lalu Lintas: `robots.txt`</h2>
+          <p>Jika sitemap adalah peta, maka <code>robots.txt</code> adalah "petugas keamanan" di gerbang depan website Anda. File ini adalah hal pertama yang dicari oleh robot Google. Melalui file ini, kita bisa memberikan instruksi, seperti:</p>
+          <ul>
+            <li>"Silakan masuk dan jelajahi semua area." (Ini yang kami lakukan).</li>
+            <li>"Tolong jangan masuk ke area admin atau halaman sensitif lainnya."</li>
+            <li>"Peta situs (sitemap) bisa Anda temukan di sini."</li>
+          </ul>
+          <p>Dengan mengatur lalu lintas ini, kita memastikan robot Google fokus pada konten yang relevan dan tidak membuang waktu di area yang tidak penting.</p>
+
+          <h2>3. Memberi Identitas pada Setiap Halaman</h2>
+          <p>Setiap halaman di website Anda perlu memiliki "KTP" yang jelas agar Google memahaminya dengan baik. Dua elemen kuncinya adalah:</p>
+          <ul>
+            <li><strong>Meta Deskripsi:</strong> Ini adalah teks singkat yang muncul di bawah judul halaman Anda di hasil pencarian Google. Deskripsi yang menarik dapat meningkatkan kemungkinan orang mengklik tautan Anda.</li>
+            <li><strong>Canonical URL:</strong> Terkadang, satu halaman bisa diakses melalui beberapa URL berbeda. Canonical URL memberitahu Google, "Dari semua versi yang ada, inilah alamat yang resmi." Ini sangat penting untuk menghindari masalah duplikasi konten.</li>
+          </ul>
+
+          <h2>Kesimpulan: Fondasi Teknis yang Kuat adalah Kunci</h2>
+          <p>Membuat website cepat terindeks bukanlah tentang trik, melainkan tentang membangun fondasi teknis yang solid sejak awal. Dengan menerapkan praktik terbaik SEO, kami memastikan bahwa website yang kami bangun tidak hanya indah secara visual, tetapi juga siap untuk ditemukan oleh calon pelanggan Anda di mesin pencari.</p>
+
+          <hr class="my-8">
+
+          <div class="bg-gray-100 p-8 rounded-lg text-center">
+            <h3 class="text-xl font-semibold text-gray-900">Pastikan Website Anda Dibangun dengan Benar</h3>
+            <p class="mt-2 text-gray-700">Kami menangani semua detail teknis ini agar Anda bisa fokus pada bisnis Anda. Siap membangun fondasi digital yang kuat?</p>
+            <a href="../#contact" class="btn-primary mt-6 inline-block py-3 px-8 rounded-lg text-lg font-semibold">Jadwalkan Konsultasi Gratis</a>
+          </div>
+
+        </article>
+
+        <!-- Navigasi Post Sebelumnya/Selanjutnya -->
+        <nav id="post-navigation" class="mt-12 pt-8 border-t flex justify-between items-start space-x-8">
+          <!-- Konten navigasi akan diisi oleh post-detail.js -->
+        </nav>
       </div>
 
-      <p>Memiliki website yang hebat tidak ada artinya jika tidak ada yang bisa menemukannya. Di artikel studi kasus kami sebelumnya, kami menyebutkan bahwa website <strong>mardiancore.digital</strong> berhasil terindeks oleh Google dalam waktu kurang dari 24 jam. Bagaimana caranya?</p>
-      <p>Proses ini bukanlah kebetulan, melainkan hasil dari serangkaian praktik terbaik *Technical SEO* (Search Engine Optimization) yang kami terapkan. Mari kita bedah beberapa "rahasia" tersebut.</p>
-
-      <h2>1. Memberi Peta Jalan kepada Google: `sitemap.xml`</h2>
-      <p>Bayangkan Anda memasuki sebuah kota besar tanpa peta. Anda mungkin akan tersesat. Begitu pula dengan robot Google saat mengunjungi website Anda. Sebuah file bernama <code>sitemap.xml</code> berfungsi sebagai peta yang jelas, berisi daftar semua halaman penting yang ingin Anda tunjukkan kepada Google.</p>
-      <p>Dengan menyediakan peta situs, kita secara proaktif memberitahu Google, "Ini halaman-halaman saya, tolong indeks semuanya." Ini jauh lebih efisien daripada membiarkan Google menebak-nebak.</p>
-
-      <h2>2. Mengatur Lalu Lintas: `robots.txt`</h2>
-      <p>Jika sitemap adalah peta, maka <code>robots.txt</code> adalah "petugas keamanan" di gerbang depan website Anda. File ini adalah hal pertama yang dicari oleh robot Google. Melalui file ini, kita bisa memberikan instruksi, seperti:</p>
-      <ul>
-        <li>"Silakan masuk dan jelajahi semua area." (Ini yang kami lakukan).</li>
-        <li>"Tolong jangan masuk ke area admin atau halaman sensitif lainnya."</li>
-        <li>"Peta situs (sitemap) bisa Anda temukan di sini."</li>
-      </ul>
-      <p>Dengan mengatur lalu lintas ini, kita memastikan robot Google fokus pada konten yang relevan dan tidak membuang waktu di area yang tidak penting.</p>
-
-      <h2>3. Memberi Identitas pada Setiap Halaman</h2>
-      <p>Setiap halaman di website Anda perlu memiliki "KTP" yang jelas agar Google memahaminya dengan baik. Dua elemen kuncinya adalah:</p>
-      <ul>
-        <li><strong>Meta Deskripsi:</strong> Ini adalah teks singkat yang muncul di bawah judul halaman Anda di hasil pencarian Google. Deskripsi yang menarik dapat meningkatkan kemungkinan orang mengklik tautan Anda.</li>
-        <li><strong>Canonical URL:</strong> Terkadang, satu halaman bisa diakses melalui beberapa URL berbeda. Canonical URL memberitahu Google, "Dari semua versi yang ada, inilah alamat yang resmi." Ini sangat penting untuk menghindari masalah duplikasi konten.</li>
-      </ul>
-
-      <h2>Kesimpulan: Fondasi Teknis yang Kuat adalah Kunci</h2>
-      <p>Membuat website cepat terindeks bukanlah tentang trik, melainkan tentang membangun fondasi teknis yang solid sejak awal. Dengan menerapkan praktik terbaik SEO, kami memastikan bahwa website yang kami bangun tidak hanya indah secara visual, tetapi juga siap untuk ditemukan oleh calon pelanggan Anda di mesin pencari.</p>
-
-      <hr class="my-8">
-
-      <div class="bg-gray-100 p-8 rounded-lg text-center">
-        <h3 class="text-xl font-semibold text-gray-900">Pastikan Website Anda Dibangun dengan Benar</h3>
-        <p class="mt-2 text-gray-700">Kami menangani semua detail teknis ini agar Anda bisa fokus pada bisnis Anda. Siap membangun fondasi digital yang kuat?</p>
-        <a href="../#contact" class="btn-primary mt-6 inline-block py-3 px-8 rounded-lg text-lg font-semibold">Jadwalkan Konsultasi Gratis</a>
+      <!-- Kolom Sidebar -->
+      <div class="lg:col-span-1 mt-12 lg:mt-0">
+        <div class="bg-white p-6 rounded-lg shadow-lg sticky top-28">
+          <h3 class="text-xl font-bold text-gray-900 mb-4 border-b pb-3">Insight Terbaru</h3>
+          <div id="recent-posts-sidebar" class="space-y-4 mt-4">
+            <!-- Konten akan diisi oleh sidebar-posts.js -->
+            <div class="text-center text-gray-500">Memuat artikel...</div>
+          </div>
+        </div>
       </div>
 
-    </article>
-
-    <!-- Navigasi Post Sebelumnya/Selanjutnya -->
-    <nav id="post-navigation" class="mt-12 pt-8 border-t flex justify-between items-start space-x-8">
-      <!-- Konten navigasi akan diisi oleh post-detail.js -->
-    </nav>
+    </div>
 
   </main>
 
@@ -117,7 +150,7 @@
   </footer>
 
   <script src="../assets/js/main.js"></script>
-  <!-- Skrip khusus untuk halaman detail post -->
   <script src="../assets/js/post-detail.js"></script>
+  <script src="../assets/js/sidebar-posts.js"></script>
 </body>
 </html>
