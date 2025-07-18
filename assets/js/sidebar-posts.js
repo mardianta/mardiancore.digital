@@ -36,19 +36,29 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      const postsHTML = recentPosts.map(post => `
-        <a href="${post.slug}.html" class="flex items-start space-x-4 group">
-          <img 
-            src="${post.image}" 
-            alt="Thumbnail untuk ${post.title}" 
-            class="w-16 h-16 object-cover rounded-md flex-shrink-0" 
-            loading="lazy">
-          <div>
-            <p class="font-semibold text-primary group-hover:text-secondary transition-colors leading-tight">${post.title}</p>
-            <p class="text-sm text-gray-500 mt-1">${post.date}</p>
-          </div>
-        </a>
-      `).join('');
+      const postsHTML = recentPosts.map(post => {
+        const firstLetter = post.title.charAt(0).toUpperCase();
+        
+        // Cek jika post.image ada dan tidak kosong. Jika tidak, buat placeholder.
+        const imageHtml = post.image
+          ? `<img 
+              src="${post.image}" 
+              alt="Thumbnail untuk ${post.title}" 
+              class="w-16 h-16 object-cover rounded-md flex-shrink-0" 
+              loading="lazy">`
+          : `<div class="w-16 h-16 rounded-md flex-shrink-0 flex items-center justify-center bg-gray-200 text-gray-500 text-2xl font-bold">
+              ${firstLetter}
+            </div>`;
+
+        return `
+          <a href="${post.slug}.html" class="flex items-start space-x-4 group">
+            ${imageHtml}
+            <div>
+              <p class="font-semibold text-primary group-hover:text-secondary transition-colors leading-tight">${post.title}</p>
+              <p class="text-sm text-gray-500 mt-1">${post.date}</p>
+            </div>
+          </a>`;
+      }).join('');
 
       sidebarContainer.innerHTML = postsHTML;
 
