@@ -35,9 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
           ? `<img 
               src="${post.image}" 
               alt="Thumbnail untuk ${post.title}" 
-              class="w-32 h-32 object-cover rounded-lg flex-shrink-0" 
+              class="w-24 h-24 object-cover rounded-lg flex-shrink-0" 
               loading="lazy">`
-          : `<div class="w-32 h-32 rounded-lg flex-shrink-0 flex items-center justify-center bg-gray-200 text-gray-500 text-4xl font-bold">
+          : `<div class="w-24 h-24 rounded-lg flex-shrink-0 flex items-center justify-center bg-gray-200 text-gray-500 text-3xl font-bold">
               ${firstLetter}
             </div>`;
 
