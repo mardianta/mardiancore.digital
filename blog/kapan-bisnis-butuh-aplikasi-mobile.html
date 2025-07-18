@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Kenali tanda-tanda kapan bisnis Anda membutuhkan sebuah aplikasi mobile untuk meningkatkan loyalitas pelanggan dan keunggulan kompetitif.">
+  <meta name="description" content="Ketahui kapan bisnis Anda perlu melangkah lebih jauh dari sekadar website dengan mengembangkan aplikasi mobile untuk meningkatkan loyalitas dan interaksi pelanggan.">
   <link rel="canonical" href="https://mardiancore.digital/blog/kapan-bisnis-butuh-aplikasi-mobile" />
   <title>Website Saja Tidak Cukup? Kapan Bisnis Anda Membutuhkan Aplikasi Mobile - PT. Mardian Core Digital</title>
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -21,52 +21,113 @@
         <li><a href="..#home" class="hover:text-secondary transition-colors">Beranda</a></li>
         <li><a href="..#about" class="hover:text-secondary transition-colors">Tentang Kami</a></li>
         <li><a href="..#services" class="hover:text-secondary transition-colors">Layanan</a></li>
-        <li><a href="./" class="text-secondary font-bold transition-colors">Blog</a></li>
+        <li><a href="/" class="text-secondary font-bold transition-colors">Blog</a></li>
         <li>
           <a href="..#contact" class="btn-primary px-4 py-2 rounded-md text-sm font-semibold">Hubungi Kami</a>
         </li>
       </ul>
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Buka menu utama</span>
+          <svg id="icon-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="icon-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
     </nav>
+    <!-- Menu Mobile, tampil/sembunyi berdasarkan state menu. -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <li><a href="..#home" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Beranda</a></li>
+        <li><a href="..#about" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Tentang Kami</a></li>
+        <li><a href="..#services" class="text-primary block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Layanan</a></li>
+        <li><a href="/" class="text-secondary font-bold block px-3 py-2 rounded-md text-base font-medium hover:bg-secondary hover:text-white transition-colors">Blog</a></li>
+        <li class="mt-2">
+          <a href="..#contact" class="block text-center btn-primary px-3 py-2 rounded-md text-base font-medium">Hubungi via WhatsApp</a>
+        </li>
+      </ul>
+    </div>
   </header>
 
-  <main class="max-w-3xl mx-auto px-6 py-16">
-    <article class="prose lg:prose-xl bg-white p-8 md:p-12 rounded-lg shadow-lg">
-      
-      <div class="mb-8 border-b pb-4">
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Website Saja Tidak Cukup? Kapan Bisnis Anda Membutuhkan Aplikasi Mobile</h1>
-        <p class="text-gray-500 mt-2">Oleh Tim Mardian Core Digital</p>
-        <p class="text-sm text-gray-500 mt-1">Dipublikasikan pada 21 Juli 2025</p>
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <div class="lg:grid lg:grid-cols-3 lg:gap-x-12">
+
+      <!-- Kolom Konten Utama -->
+      <div class="lg:col-span-2">
+        <article class="prose lg:prose-xl bg-white p-8 md:p-12 rounded-lg shadow-lg">
+          
+          <div class="mb-8 border-b pb-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">Website Saja Tidak Cukup? Kapan Bisnis Anda Membutuhkan Aplikasi Mobile</h1>
+            <p class="text-gray-500 mt-2">Oleh Tim Mardian Core Digital</p>
+            <p class="text-sm text-gray-500 mt-1">Dipublikasikan pada 21 Juli 2025</p>
+          </div>
+
+          <picture class="my-8 block">
+            <source 
+              type="image/webp" 
+              srcset="../assets/images/blog/kapan-bisnis-butuh-aplikasi-mobile/gambar.webp 400w,
+                      ../assets/images/blog/kapan-bisnis-butuh-aplikasi-mobile/gambar.webp 800w,
+                      ../assets/images/blog/kapan-bisnis-butuh-aplikasi-mobile/gambar.webp 1200w"
+              sizes="(max-width: 768px) 100vw, 800px">
+            <img 
+              src="../assets/images/blog/kapan-bisnis-butuh-aplikasi-mobile/gambar.webp" 
+              alt="Tampilan website di desktop dan aplikasi mobile di ponsel berdampingan." 
+              class="rounded-lg shadow-md w-full h-auto"
+              width="1200" height="675"
+              loading="eager">
+          </picture>
+
+          <p>Banyak bisnis sudah puas dengan memiliki website. Namun, ada titik di mana sebuah aplikasi mobile kustom dapat memberikan keunggulan kompetitif yang signifikan. Aplikasi mobile bukan pengganti website, melainkan pelengkap yang kuat untuk membangun hubungan yang lebih dalam dengan pelanggan Anda.</p>
+
+          <h2>Tanda-tanda Anda Membutuhkan Aplikasi Mobile</h2>
+          <p>Bagaimana Anda tahu jika sudah waktunya untuk berinvestasi dalam sebuah aplikasi? Perhatikan tanda-tanda berikut:</p>
+          <ul>
+            <li><strong>Anda Ingin Meningkatkan Loyalitas Pelanggan:</strong> Aplikasi memungkinkan Anda untuk membuat program loyalitas, memberikan penawaran eksklusif, dan mengirimkan notifikasi push yang menjaga brand Anda tetap di benak pelanggan.</li>
+            <li><strong>Anda Membutuhkan Interaksi yang Sering:</strong> Jika model bisnis Anda bergantung pada interaksi harian atau mingguan dengan pengguna (misalnya, layanan pemesanan, platform edukasi, atau komunitas), aplikasi memberikan akses yang jauh lebih cepat dan mudah daripada membuka browser.</li>
+            <li><strong>Fungsionalitas Membutuhkan Akses Perangkat:</strong> Apakah layanan Anda perlu menggunakan kamera, GPS, atau sensor lain di ponsel? Aplikasi adalah satu-satunya cara untuk mengakses fitur-fitur ini secara penuh.</li>
+            <li><strong>Anda Ingin Memberikan Pengalaman Offline:</strong> Jika pelanggan perlu mengakses informasi atau fitur tertentu bahkan tanpa koneksi internet, aplikasi dapat menyimpan data secara lokal di perangkat mereka.</li>
+          </ul>
+
+          <h2>Website dan Aplikasi: Sebuah Sinergi</h2>
+          <p>Pikirkan website sebagai etalase toko Anda yang dapat diakses oleh siapa saja untuk menarik pelanggan baru. Sementara itu, aplikasi mobile adalah kunci akses eksklusif yang Anda berikan kepada pelanggan setia Anda, memberikan mereka pengalaman yang lebih personal dan kaya fitur.</p>
+
+          <hr class="my-8">
+
+          <div class="bg-gray-100 p-8 rounded-lg text-center">
+            <h3 class="text-xl font-semibold text-gray-900">Siap Membangun Jembatan ke Pelanggan Anda?</h3>
+            <p class="mt-2 text-gray-700">Jika Anda melihat tanda-tanda di atas pada bisnis Anda, mungkin ini saatnya untuk mendiskusikan potensi aplikasi mobile. Kami siap membantu Anda merancang dan membangun aplikasi yang sesuai dengan tujuan bisnis Anda.</p>
+            <a href="../#contact" class="btn-primary mt-6 inline-block py-3 px-8 rounded-lg text-lg font-semibold">Diskusikan Ide Aplikasi Anda</a>
+          </div>
+
+        </article>
+
+        <!-- Navigasi Post Sebelumnya/Selanjutnya -->
+        <nav id="post-navigation" class="mt-12 pt-8 border-t flex justify-between items-start space-x-8">
+          <!-- Konten navigasi akan diisi oleh post-detail.js -->
+        </nav>
       </div>
 
-      <p>Anda sudah memiliki website yang bagus dan lalu lintas pengunjung yang stabil. Lalu, apa selanjutnya? Sementara website sangat baik untuk jangkauan awal, sebuah aplikasi mobile menawarkan tingkat interaksi dan loyalitas pelanggan yang lebih dalam. Jika Anda ingin meningkatkan retensi pelanggan, menawarkan program loyalitas, atau mempermudah transaksi berulang, mungkin ini saatnya mempertimbangkan pengembangan aplikasi mobile.</p>
-
-      <h2>Tanda-Tanda Anda Butuh Aplikasi</h2>
-      <ul>
-        <li><strong>Interaksi Harian:</strong> Jika bisnis Anda membutuhkan interaksi rutin dari pelanggan (misalnya, booking, cek status, dll.).</li>
-        <li><strong>Program Loyalitas:</strong> Anda ingin memberikan poin, diskon, atau penawaran eksklusif kepada pelanggan setia.</li>
-        <li><strong>Personalisasi:</strong> Anda ingin memberikan pengalaman yang disesuaikan untuk setiap pengguna berdasarkan preferensi mereka.</li>
-      </ul>
-
-      <h2>Kelebihan Aplikasi Dibanding Website</h2>
-      <p>Aplikasi mobile dapat mengirimkan notifikasi push langsung ke layar pengguna, memanfaatkan fitur perangkat seperti kamera atau GPS, dan seringkali menawarkan pengalaman yang lebih cepat dan lebih mulus daripada website mobile.</p>
-
-      <hr class="my-8">
-
-      <div class="bg-gray-100 p-8 rounded-lg text-center">
-        <h3 class="text-xl font-semibold text-gray-900">Tingkatkan Loyalitas Pelanggan Anda</h3>
-        <p class="mt-2 text-gray-700">Diskusikan ide aplikasi Anda dengan kami. Kami dapat membantu mengubah konsep Anda menjadi aplikasi fungsional yang disukai pelanggan.</p>
-        <a href="../#contact" class="btn-primary mt-6 inline-block py-3 px-8 rounded-lg text-lg font-semibold">Diskusikan Proyek Aplikasi</a>
+      <!-- Kolom Sidebar -->
+      <div class="lg:col-span-1 mt-12 lg:mt-0">
+        <div class="bg-white p-6 rounded-lg shadow-lg sticky top-28">
+          <h3 class="text-xl font-bold text-gray-900 mb-4 border-b pb-3">Insight Terbaru</h3>
+          <div id="recent-posts-sidebar" class="space-y-4 mt-4">
+            <!-- Konten akan diisi oleh sidebar-posts.js -->
+            <div class="text-center text-gray-500">Memuat artikel...</div>
+          </div>
+        </div>
       </div>
 
-    </article>
+    </div>
 
-    <nav id="post-navigation" class="mt-12 pt-8 border-t flex justify-between items-start space-x-8">
-      <!-- Konten navigasi akan diisi oleh post-detail.js -->
-    </nav>
   </main>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=6283852166740&text=Halo%20PT.%20Mardian%20Core%20Digital" class="float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=6283852166740&text=Halo%20PT.%20Mardian%20Core%20Digital,%20saya%20telah%20melihat%20informasi%20tentang%20layanan%20Anda:%20pengembangan%20aplikasi,%20pengembangan%20website,%20dan%20solusi%20keamanan%20digital.%20Saya%20ingin%20berdiskusi%20lebih%20lanjut%20bagaimana%20layanan%20Anda%20dapat%20mengakselerasi%20pertumbuhan%20bisnis%20saya.%20Mohon%20informasinya." class="float" target="_blank">
   <i class="fa fa-whatsapp my-float"></i>
   </a>
 
@@ -78,5 +139,6 @@
 
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/post-detail.js"></script>
+  <script src="../assets/js/sidebar-posts.js"></script>
 </body>
 </html>
