@@ -7,7 +7,8 @@
     "category": {
       "name": "Tips",
       "class": "bg-blue-100 text-blue-800"
-    }
+    },
+    "image": "../assets/images/blog/5-tanda-bisnis-butuh-website/gambar.webp"
   },
   {
     "slug": "cara-agar-website-cepat-terindeks-google",
@@ -17,7 +18,8 @@
     "category": {
       "name": "Tips",
       "class": "bg-blue-100 text-blue-800"
-    }
+    },
+    "image": "../assets/images/blog/cara-agar-website-cepat-terindeks-google/gambar.webp"
   },
   {
     "slug": "website-terindeks-cepat",
@@ -37,7 +39,8 @@
     "category": {
       "name": "Keamanan",
       "class": "bg-red-100 text-red-800"
-    }
+    },
+    "image": "../assets/images/blog/mengapa-keamanan-digital-penting/gambar.webp"
   },
   {
     "slug": "kapan-bisnis-butuh-aplikasi-mobile",
@@ -47,6 +50,7 @@
     "category": {
       "name": "Pengembangan Aplikasi",
       "class": "bg-purple-100 text-purple-800"
-    }
+    },
+    "image": "../assets/images/blog/kapan-bisnis-butuh-aplikasi-mobile/gambar.webp"
   }
 ]
