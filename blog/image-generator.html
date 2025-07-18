@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Gambar Responsif (WebP & JPG)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .drop-zone {
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+        .drop-zone--over {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+        }
+        #preview {
+            max-width: 100%;
+            max-height: 200px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
+
+    <div class="w-full max-w-2xl bg-white p-8 rounded-xl shadow-lg">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800">Image Set Generator</h1>
+            <p class="text-gray-500 mt-2">Unggah satu gambar untuk membuat set gambar responsif (WebP) & fallback (JPG).</p>
+        </div>
+
+        <div id="upload-container">
+            <input type="file" id="image-input" class="hidden" accept="image/png, image/jpeg, image/webp">
+            <div id="drop-zone" class="drop-zone">
+                <p class="text-gray-600">Seret & lepas gambar di sini, atau <span class="font-semibold text-blue-600">klik untuk memilih file</span>.</p>
+                <img id="preview" class="hidden" alt="Pratinjau gambar yang diunggah">
+            </div>
+            <div id="file-info" class="text-sm text-gray-500 mt-2 text-center"></div>
+        </div>
+
+        <div class="mt-6">
+            <label for="base-name" class="block text-sm font-medium text-gray-700 mb-1">Nama Dasar File (contoh: hero-image)</label>
+            <input type="text" id="base-name" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="hero-image">
+        </div>
+        
+        <div class="mt-6">
+            <button id="generate-btn" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-md hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2" disabled>
+                <span id="btn-text">Generate & Download ZIP</span>
+                <div id="loader" class="loader hidden"></div>
+            </button>
+        </div>
+
+        <div id="status" class="mt-4 text-center text-green-600 font-medium"></div>
+    </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const dropZone = document.getElementById('drop-zone');
+    const imageInput = document.getElementById('image-input');
+    const preview = document.getElementById('preview');
+    const fileInfo = document.getElementById('file-info');
+    const baseNameInput = document.getElementById('base-name');
+    const generateBtn = document.getElementById('generate-btn');
+    const status = document.getElementById('status');
+    const btnText = document.getElementById('btn-text');
+    const loader = document.getElementById('loader');
+
+    let selectedFile = null;
+
+    // Fungsi untuk memvalidasi form
+    const validateForm = () => {
+        const isFileSelected = selectedFile !== null;
+        const isBaseNameFilled = baseNameInput.value.trim() !== '';
+        generateBtn.disabled = !(isFileSelected && isBaseNameFilled);
+    };
+
+    // Event listeners untuk drop zone
+    dropZone.addEventListener('click', () => imageInput.click());
+    dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropZone.classList.add('drop-zone--over');
+    });
+    ['dragleave', 'dragend'].forEach(type => {
+        dropZone.addEventListener(type, () => dropZone.classList.remove('drop-zone--over'));
+    });
+    dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('drop-zone--over');
+        if (e.dataTransfer.files.length) {
+            handleFile(e.dataTransfer.files[0]);
+        }
+    });
+
+    imageInput.addEventListener('change', () => {
+        if (imageInput.files.length) {
+            handleFile(imageInput.files[0]);
+        }
+    });
+    
+    baseNameInput.addEventListener('input', validateForm);
+
+    function handleFile(file) {
+        if (file && file.type.startsWith('image/')) {
+            selectedFile = file;
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                preview.src = e.target.result;
+                preview.classList.remove('hidden');
+            };
+            reader.readAsDataURL(file);
+            fileInfo.textContent = `File: ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+            
+            // Set base name dari nama file (tanpa ekstensi)
+            const fileNameWithoutExt = file.name.split('.').slice(0, -1).join('.');
+            baseNameInput.value = fileNameWithoutExt.replace(/[^a-z0-9]/gi, '-').toLowerCase();
+
+            validateForm();
+        } else {
+            selectedFile = null;
+            preview.classList.add('hidden');
+            fileInfo.textContent = 'File yang dipilih bukan gambar.';
+            validateForm();
+        }
+    }
+
+    // Fungsi untuk resize dan convert gambar
+    async function processImage(file, width, format = 'webp', quality = 0.8) {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const img = new Image();
+                img.onload = () => {
+                    const canvas = document.createElement('canvas');
+                    const scale = width / img.width;
+                    const height = img.height * scale;
+                    canvas.width = width;
+                    canvas.height = height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0, width, height);
+
+                    canvas.toBlob((blob) => {
+                        if (blob) {
+                            resolve(blob);
+                        } else {
+                            reject(new Error('Gagal membuat blob dari canvas.'));
+                        }
+                    }, `image/${format}`, quality);
+                };
+                img.onerror = reject;
+                img.src = e.target.result;
+            };
+            reader.onerror = reject;
+            reader.readAsDataURL(file);
+        });
+    }
+
+    generateBtn.addEventListener('click', async () => {
+        if (generateBtn.disabled) return;
+        
+        generateBtn.disabled = true;
+        status.textContent = 'Memproses gambar...';
+        btnText.classList.add('hidden');
+        loader.classList.remove('hidden');
+
+        try {
+            const zip = new JSZip();
+            const baseName = baseNameInput.value.trim();
+
+            const sizes = [
+                { name: 'large', width: 1200 },
+                { name: 'medium', width: 800 },
+                { name: 'small', width: 400 },
+            ];
+
+            // Generate WebP images
+            for (const size of sizes) {
+                status.textContent = `Membuat ${baseName}-${size.name}.webp...`;
+                const blob = await processImage(selectedFile, size.width, 'webp');
+                zip.file(`${baseName}-${size.name}.webp`, blob);
+            }
+
+            // Generate JPG fallback
+            status.textContent = `Membuat ${baseName}-fallback.jpg...`;
+            const fallbackBlob = await processImage(selectedFile, 1200, 'jpeg', 0.85);
+            zip.file(`${baseName}-fallback.jpg`, fallbackBlob);
+
+            status.textContent = 'Membuat file ZIP...';
+            const content = await zip.generateAsync({ type: 'blob' });
+
+            // Download ZIP
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(content);
+            link.download = `${baseName}-images.zip`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            status.textContent = 'Selesai! File ZIP berhasil diunduh.';
+
+        } catch (error) {
+            console.error('Error generating images:', error);
+            status.textContent = `Terjadi kesalahan: ${error.message}`;
+            status.classList.remove('text-green-600');
+            status.classList.add('text-red-600');
+        } finally {
+            generateBtn.disabled = false;
+            btnText.classList.remove('hidden');
+            loader.classList.add('hidden');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
