@@ -28,16 +28,36 @@ document.addEventListener('DOMContentLoaded', () => {
       // Loop melalui setiap post dan buat elemen HTML-nya
       posts.forEach(post => {
         const articleElement = document.createElement('article');
+
+        // Logika untuk gambar atau placeholder
+        const firstLetter = post.title.charAt(0).toUpperCase();
+        const imageHtml = post.image
+          ? `<img 
+              src="${post.image}" 
+              alt="Thumbnail untuk ${post.title}" 
+              class="w-32 h-32 object-cover rounded-lg flex-shrink-0" 
+              loading="lazy">`
+          : `<div class="w-32 h-32 rounded-lg flex-shrink-0 flex items-center justify-center bg-gray-200 text-gray-500 text-4xl font-bold">
+              ${firstLetter}
+            </div>`;
+
         articleElement.innerHTML = `
-          <div class="mb-2">
-              <span class="inline-block ${post.category.class} text-xs font-semibold px-2.5 py-1 rounded-full">${post.category.name}</span>
+          <div class="flex flex-col sm:flex-row items-start sm:space-x-6">
+            <a href="${post.slug}.html" class="block mb-4 sm:mb-0">
+              ${imageHtml}
+            </a>
+            <div>
+              <div class="mb-2">
+                  <span class="inline-block ${post.category.class} text-xs font-semibold px-2.5 py-1 rounded-full">${post.category.name}</span>
+              </div>
+              <h2 class="text-2xl md:text-3xl font-bold text-primary mb-2 leading-snug">
+                  <a href="${post.slug}.html" class="hover:text-secondary transition-colors">${post.title}</a>
+              </h2>
+              <p class="text-sm text-gray-500 mb-4">Dipublikasikan pada ${post.date}</p>
+              <p class="text-gray-600 mb-4">${post.summary}</p>
+              <a href="${post.slug}.html" class="font-semibold text-secondary hover:underline transition-colors">Baca Selengkapnya &rarr;</a>
+            </div>
           </div>
-          <h2 class="text-2xl md:text-3xl font-bold text-primary mb-2 leading-snug">
-              <a href="${post.slug}.html" class="hover:text-secondary transition-colors">${post.title}</a>
-          </h2>
-          <p class="text-sm text-gray-500 mb-4">Dipublikasikan pada ${post.date}</p>
-          <p class="text-gray-600 mb-4">${post.summary}</p>
-          <a href="${post.slug}.html" class="font-semibold text-secondary hover:underline transition-colors">Baca Selengkapnya &rarr;</a>
         `;
         blogPostListContainer.appendChild(articleElement);
       });
