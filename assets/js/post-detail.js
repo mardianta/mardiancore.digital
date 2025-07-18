@@ -18,8 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       const currentSlug = getCurrentSlug();
       
-      // Mengambil data dari posts.json. Path ini relatif dari halaman detail blog.
-      const response = await fetch('posts.json');
+      // Mengambil data dari posts.json.
+      // Path diubah menjadi absolut ('/blog/posts.json') agar dapat berfungsi dari halaman mana pun di situs,
+      // baik di dalam folder /blog/ maupun di root direktori seperti about.html.
+      // Path asli ('posts.json') hanya berfungsi jika halaman HTML berada di dalam folder /blog/.
+      const response = await fetch('/blog/posts.json');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
